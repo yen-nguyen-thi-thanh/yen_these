@@ -1,0 +1,167 @@
+% 	/!\ Compile with LuaLaTeX
+%	!TEX encoding = UTF-8 Unicode
+
+\documentclass{Classe/Dissertate}
+
+%	Fonts
+%	/!\ Have to be installed from `font' directory before first compiling
+\input{fonts/fonts.tex}
+
+%	All necessary `\usepackage' 
+\input{Classe/packages.tex}
+
+%	Colors to be used for chapters 
+\input{Classe/colors.tex}
+
+%	Shorthands for math symbols
+\input{Classe/math.tex}
+
+%	Theorem enviromnents (theorem, proposition, lemma, etc)
+\input{Classe/theorem.tex}
+
+%	TOC per chapter
+\input{Classe/localTOC.tex}
+
+%	Color index on the side
+%	Use '\ChangeColor' to change color
+\input{Classe/tags.tex}
+
+%	Footer flipbook a
+%	Images stored in 'animation', numbered 0,2,4, etc.
+%	Use '\BeginAnimation' to start the flipbook
+%	Use '\Animefalse' to stop the flipbook
+\input{animation/animation.tex}
+
+\bibliographystyle{abbrvnat}
+\usepackage{pdfpages}
+
+
+\begin{document}
+ \setcounter{page}{1}
+ \pagenumbering{roman}
+ 
+%	Frontpage, to be compiled beforehand 
+\includepdf{Frontpage/frontpage.pdf}
+%
+% Thesis information (title, director, etc)
+\input{frontmatter/personalize}
+%\frontmatter
+
+    \lab
+    %\abstractpage
+    %\dedicationpage
+    %
+    
+    
+        
+\input{frontmatter/abstract_en.tex}
+~\newpage
+\vspace{0.1cm}
+\input{frontmatter/abstract_fr.tex}
+
+~\newpage
+ %\acknowledgments
+\input{frontmatter/thanks.tex}
+
+~\newpage
+%\Notations and Definitions
+\input{frontmatter/notation.tex}
+
+
+    \tableofcontents
+     
+    \clearpage
+    
+    \OddChapter%
+    
+	\setcounter{page}{1}
+    \pagenumbering{arabic}
+    \restoregeometry
+    
+\renewcommand{\contentsname}{}
+\setcounter{tocdepth}{3}
+\addtocounter{chapter}{0}
+
+
+\ChangeColor%
+\chapter{Introduction}
+%\ChapFrame%
+\LocalTOC%
+\subimport{Chapters/Ch_Resume/}{ch_resume.tex}
+\OddChapter%
+\clearpage
+
+
+\ChangeColor%
+\chapter{Elements of transport optimal}
+%\ChapFrame%
+\LocalTOC%
+\subimport{Chapters/Ch0/}{ch0.tex}
+\OddChapter%
+\clearpage
+
+
+
+\ChangeColor%
+\chapter{Optimal transport-based machine learning to match specific patterns: application to the detection of molecular regulation patterns in omics data}
+\ChapFrame%
+\LocalTOC%
+\subimport{Chapters/Ch1/}{ch1.tex}
+\OddChapter%
+\clearpage
+%
+
+\ChangeColor%
+\chapter{Making sparse predictions, and anticipating the requests of declaration
+  of natural  disasters for a drought  event in France}
+\ChapFrame%
+\LocalTOC%
+\subimport{Chapters/Ch2/}{ch2.tex}
+\OddChapter%
+\clearpage
+
+\ChangeColor%
+\chapter{Conclusion and discussion}
+\ChapFrame%
+\LocalTOC%
+\subimport{Chapters/Ch3/}{ch3.tex}
+\OddChapter%
+\clearpage
+
+%\ChangeColor%
+%\chapter{Sparse prediction}
+%\ChapFrame%
+%\LocalTOC%
+%\subimport{Chapters/Ch3/}{ch3.tex}
+%\OddChapter%
+%\clearpage
+
+
+%
+%\ChangeColor%
+%\chapter{En Bref}
+%\Framefalse
+%\ChapFrame%
+%\subimport{Chapters/Ch_Resume/}{ch_resume.tex}
+%\OddChapter
+%\clearpage
+%
+%\ChangeColor
+%\chapter*{Published Articles and Preprints}
+%\Framefalse
+%\Animefalse
+%\ChapterColor
+
+%\input{References/myarticles.tex}
+
+\bibliography{References/main}
+%\bibliography{References/sparse_regression}
+\newpage
+\pagestyle{empty}
+%\OddChapter
+~ 
+\newpage
+
+
+
+\end{document}

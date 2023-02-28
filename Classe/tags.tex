@@ -1,0 +1,113 @@
+\usepackage{background}
+\usetikzlibrary{positioning,calc}
+\usepackage{ifthen}
+%\usepackage{titleps}
+
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter. {\slshape{##1}}}{}}
+
+\def\tikzmark#1{\tikz[remember picture, overlay]\coordinate(#1);}
+
+\newcommand\OddChapter{%
+\ifthenelse{\isodd{\thepage}}
+{\newpage 
+\Framefalse
+\thispagestyle{empty}
+~
+\newpage
+\Frametrue
+}
+{
+}
+}
+
+% background common settings
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgOpacity{1}
+\SetBgContents{}
+
+% auxiliary counter
+\newcounter{chapshift}
+%\addtocounter{chapshift}{-1}
+
+
+\newif\ifFrame
+\Frametrue
+
+\newcommand\ChangeColor{%
+\stepcounter{chapshift}
+  }
+
+% the list of colors to be used (add more if needed)
+\newcommand\BoxColor{%
+  \ifcase\thechapshift chapter0\or chapter1\or chapter2\or chapter3\or chapter4\else chapter5\fi}
+ 
+  
+  \newcommand\ChapterColor{%
+  \colorlet{chaptergrey}{\BoxColor}}
+
+
+% the main command; the mandatory argument sets the color of the vertical box
+\makeatletter
+\newcommand\ChapFrame{%
+\AddEverypageHook{%
+\ifFrame
+\ifthenelse{\isodd{\thepage}}
+{\SetBgContents{%
+  \begin{tikzpicture}[overlay,remember picture]
+  \node[fill=black!5,inner sep=2pt,rectangle,text width=0.4cm,
+    text height=297mm,align=center,anchor=north east] 
+  at ($ (current page.north east) + (-0cm,-0.5cm)$) 
+  {};
+  \node[fill=\BoxColor,inner sep=2pt,rectangle,text width=0.4cm,
+    text height=7cm,align=center,anchor=north east] 
+  at ($ (current page.north east) + (-0cm,-7*\thechapshift cm) + (-0cm,-1cm) + (-0cm,-0.5cm)$) 
+  {\rotatebox{90}{~\parbox[c][0.3cm][t]{6cm}{%
+    \raggedright\textcolor{white}{\ROBCL \variable}}}};
+  \end{tikzpicture}}%
+}
+{\SetBgContents{%
+  \begin{tikzpicture}[overlay,remember picture]
+      \node[fill=black!5,inner sep=2pt,rectangle,text width=0.4cm,
+    text height=\paperheight,align=center,anchor=north west] 
+  at ($ (current page.north west) + (-0cm,-0.5cm)$) 
+  {};
+  \node[fill=\BoxColor,inner sep=2pt,rectangle,text width=0.4cm,
+    text height=7cm,align=center,anchor=north west] 
+  at ($ (current page.north west) + (-0cm,-7*\thechapshift cm) + (-0cm,-1cm) + (-0cm,-0.5cm)$) 
+  {\rotatebox{90}{~\parbox[c][0.3cm][t]{6cm}{%
+    \raggedright\textcolor{white}{\ROBCL \variable}}}};
+  \end{tikzpicture}}
+}
+\bg@material%
+\fi%
+}%
+}
+
+%\def\AtBeginChapter{\g@addto@macro\@beginchapterhook}
+%
+%
+%\def\AtEndChapter{\g@addto@macro\@endchapterhook}
+%
+%\ifx\@beginchapterhook\@undefined
+%  \let\@beginchapterhook\@empty
+%\fi
+%
+%\ifx\@endchapterhook\@undefined
+%  \let\@endchapterhook\@empty
+%\fi
+
+\makeatother
+
+
+%\AtBeginChapter
+%{
+%\ChangeColor%
+%\ChapFrame%
+%\LocalTOC%
+%}
+%
+%\AtEndChapter
+%{
+%\OddChapter%
+%}

@@ -1,0 +1,1219 @@
+@article{Kan42,
+  title={On the Translocation of Masses},
+  author={L. Kantorovich},
+  journal={Dokl. Akad. Nauk SSSR},
+  year={1942},
+  optvolume={133},
+  pages={227-229}
+}
+@book{monge1781,
+  title={M{\'e}moire sur la th{\'e}orie des d{\'e}blais et des remblais},
+  author={Monge, G.},
+  year={1781},
+  pages = {666-704},
+  publisher={{Histoire de l'Académie Royale des Sciences}},
+  opturl={https://books.google.fr/books?id=IG7CGwAACAAJ}
+}
+@Manual{rpart,
+    title = {rpart: Recursive Partitioning and Regression Trees},
+    author = {Therneau, T. and  Atkinson, B.},
+    year = {2019},
+    note = {R package version 4.1-15},
+    url = {https://CRAN.R-project.org/package=rpart},
+  }
+
+
+@Article{ranger,
+    title = {{ranger}: A Fast Implementation of Random Forests for High Dimensional Data in {C++} and {R}},
+    author = {Wright, M. N.  and Ziegler, A.},
+    journal = {Journal of Statistical Software},
+    year = {2017},
+    volume = {77},
+    number = {1},
+    pages = {1--17},
+    doi = {10.18637/jss.v077.i01},
+  }
+
+
+@article {SL2007,
+    AUTHOR = {van der Laan, M. J. and Polley, E. C. and Hubbard, A.
+              E.},
+     TITLE = {Super learner},
+   JOURNAL = {Stat. Appl. Genet. Mol. Biol.},
+  FJOURNAL = {Statistical Applications in Genetics and Molecular Biology},
+    VOLUME = {6},
+      YEAR = {2007},
+     PAGES = {Art. 25, 23},
+      optISSN = {1544-6115},
+   optMRCLASS = {Expansion},
+  optMRNUMBER = {2349918},
+       optDOI = {10.2202/1544-6115.1309},
+       optURL = {https://doi.org/10.2202/1544-6115.1309},
+}
+
+@incollection {SLchapter,
+    AUTHOR = {Polley, E. C. and Rose, S. and van der Laan, M. J.},
+     TITLE = {Super learning},
+ BOOKTITLE = {Targeted learning},
+    SERIES = {Springer Ser. Statist.},
+     PAGES = {43--66},
+ PUBLISHER = {Springer, New York},
+      YEAR = {2011},
+   optMRCLASS = {62G05 (62-09 62F10 62J99)},
+  optMRNUMBER = {2867115},
+       optDOI = {10.1007/978-1-4419-9782-1\_3},
+       optURL = {https://doi.org/10.1007/978-1-4419-9782-1_3},
+}
+
+@Manual{SuperLearner,
+    title = {SuperLearner: Super Learner Prediction},
+    author = {Polley, E. and  LeDell, E. and  Kennedy, C. and  {van der Laan}, M. J.},
+    year = {2021},
+    note = {R package version 2.0-28},
+    url = {https://CRAN.R-project.org/package=SuperLearner},
+}
+
+
+@book {bochnak98,
+    AUTHOR = {Bochnak, J. and Coste, M. and Roy, M-F.},
+     TITLE = {Real algebraic geometry},
+    SERIES = {Ergebnisse der Mathematik und ihrer Grenzgebiete (3) [Results
+              in Mathematics and Related Areas (3)]},
+    VOLUME = {36},
+      optNOTE = {Translated from the 1987 French original,
+              Revised by the authors},
+ PUBLISHER = {Springer-Verlag, Berlin},
+      YEAR = {1998},
+     optPAGES = {x+430},
+      optISBN = {3-540-64663-9},
+   optMRCLASS = {14Pxx (11E25 32C05 58A07)},
+  optMRNUMBER = {1659509},
+optMRREVIEWER = {A. Tognoli},
+       optDOI = {10.1007/978-3-662-03718-8},
+       optURL = {https://doi.org/10.1007/978-3-662-03718-8},
+}
+
+@book {benedetti90,
+    AUTHOR = {Benedetti, R. and Risler, J-J.},
+     TITLE = {Real algebraic and semi-algebraic sets},
+    SERIES = {Actualit\'{e}s Math\'{e}matiques. [Current Mathematical Topics]},
+ PUBLISHER = {Hermann, Paris},
+      YEAR = {1990},
+     optPAGES = {340},
+      optISBN = {2-7056-6144-1},
+   optMRCLASS = {14P05 (12D10 14P10)},
+  optMRNUMBER = {1070358},
+optMRREVIEWER = {Robert Silhol},
+}
+	
+
+@InProceedings{pmlr-v32-cuturi14,
+  title = 	 {Fast Computation of {W}asserstein Barycenters},
+  author = 	 {Cuturi, M. and Doucet, A.},
+  booktitle = 	 {Proceedings of the 31st International Conference on Machine Learning},
+  pages = 	 {685--693},
+  year = 	 {2014},
+  editor = 	 {Xing, E. P. and Jebara, T.},
+  volume = 	 {32},
+  optnumber =       {2},
+  series = 	 {Proceedings of Machine Learning Research},
+  optaddress = 	 {Bejing, China},
+  month = 	 {22--24 Jun},
+  publisher =    {PMLR},
+  optpdf = 	 {http://proceedings.mlr.press/v32/cuturi14.pdf},
+  opturl = 	 {https://proceedings.mlr.press/v32/cuturi14.html},
+  optabstract = 	 {We present new algorithms to compute the mean of a set of $N$ empirical probability measures under the optimal transport metric. This mean, known as the Wasserstein barycenter&nbsp;(Agueh and Carlier, 2011; Rabin et al, 2012), is the measure that minimizes the sum of its Wasserstein distances to each element in that set. We argue through a simple example that Wasserstein barycenters have appealing properties that differentiate them from other barycenters proposed recently, which all build on kernel smoothing and/or Bregman divergences. Two original algorithms are proposed that require the repeated computation of primal and dual optimal solutions of transport problems. However direct implementation of these algorithms is too costly as optimal transports are notoriously computationally expensive. Extending the work of Cuturi (2013), we smooth both the primal and dual of the optimal transport problem to recover fast approximations of the primal and dual optimal solutions. We apply these algorithms to the visualization of perturbed images and to a clustering problem.}
+}
+
+
+@Article{Charpentier_2021,
+  author = 	 {Charpentier, A. and James, M. and Ali, H.},
+  title = 	 {Predicting Drought and Subsidence Risks in {F}rance},
+  journal = 	 {Natural Hazards and Earth System Sciences Discussion},
+  year = 	 {2021},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTpages = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {In review},
+  doi = {10.5194/nhess-2021-214},
+  OPTannote = 	 {}
+}
+
+@TechReport{osasl1,
+  author = 	 {Ecoto, G. and Bibaut, A. F. and Chambaz, A.},
+  title = 	 {One-step ahead sequential {S}uper {L}earning from short times series of many slightly dependent data, and anticipating the cost of natural disasters},  
+  OPTinstitution =  {},
+  year = 	 {2021},
+  OPTkey = 	 {},
+  OPTtype = 	 {},
+  OPTnumber = 	 {},
+  OPTaddress = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Submitted},
+  url = {https://arxiv.org/abs/2107.13291},
+  OPTannote = 	 {}
+}
+
+@TechReport{osasl2,
+  author = 	 {Ecoto, G.  and Chambaz, A.},
+  title = 	 {Anticipating the cost of drought events in {F}rance by super learning},  
+  OPTinstitution =  {},
+  year = 	 {2022},
+  OPTkey = 	 {},
+  OPTtype = 	 {},
+  OPTnumber = 	 {},
+  OPTaddress = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {Submitted},
+  url = {https://arxiv.org/abs/2206.11545},
+  OPTannote = 	 {}
+}
+
+
+@misc{kaiser2021differentiability,
+      title={Differentiability Properties of Log-Analytic Functions}, 
+      author={Kaiser, T. and Opris, A. },
+      year={2021},
+      eprint={2007.03332},
+      archivePrefix={arXiv},
+      primaryClass={math.LO}
+}
+
+@inproceedings{Coste2002ANIT,
+  title={An introduction to semialgebraic geometry},
+  author={Coste, M.},
+  year={2002}
+}
+
+@article {attouch2013proximal,
+    AUTHOR = {Attouch, H. and Bolte, J. and Redont, P. and              Soubeyran, A.},
+     TITLE = {Proximal alternating minimization and projection methods for
+              nonconvex problems: an approach based on the
+              {K}urdyka-{L}ojasiewicz inequality},
+   JOURNAL = {Math. Oper. Res.},
+  optFJOURNAL = {Mathematics of Operations Research},
+    VOLUME = {35},
+      YEAR = {2010},
+    NUMBER = {2},
+     PAGES = {438--457},
+      optISSN = {0364-765X},
+   optMRCLASS = {90C26 (49J52 65K10)},
+  optMRNUMBER = {2674728},
+       optDOI = {10.1287/moor.1100.0449},
+       optURL = {https://doi.org/10.1287/moor.1100.0449},
+}
+		
+
+
+@ARTICLE{Wilkie96modelcompleteness,
+    author = {Wilkie, A. J. },
+    title = {Model completeness results for expansions of the ordered field of real numbers by restricted {P}faffian functions and the exponential function},
+    journal = {J. Amer. Math. Soc},
+    year = {1996},
+    volume = {9},
+    pages = {1051--1094}
+}
+
+
+
+@article {doi:10.1137/060670080,
+    AUTHOR = {Bolte, J. and Daniilidis, A. and Lewis, A. and               Shiota, M.},
+     TITLE = {Clarke subgradients of stratifiable functions},
+   JOURNAL = {SIAM J. Optim.},
+  optFJOURNAL = {SIAM Journal on Optimization},
+    VOLUME = {18},
+      YEAR = {2007},
+    NUMBER = {2},
+     PAGES = {556--572},
+     optISSN = {1052-6234},
+   optMRCLASS = {49J52 (26D10 32B20)},
+  optMRNUMBER = {2338451},
+optMRREVIEWER = {Marian Mure\c{s}an},
+       optDOI = {10.1137/060670080},
+       optURL = {https://doi.org/10.1137/060670080},
+}
+	
+
+@article {iPiano,
+    AUTHOR = {Ochs, P. and Brox, T. and Pock, T.},
+     TITLE = {i{P}iano: inertial proximal algorithm for strongly convex
+              optimization},
+   JOURNAL = {J. Math. Imaging Vision},
+  optFJOURNAL = {Journal of Mathematical Imaging and Vision},
+    VOLUME = {53},
+      YEAR = {2015},
+    NUMBER = {2},
+     PAGES = {171--181},
+      optISSN = {0924-9907},
+   optMRCLASS = {94A08},
+  optMRNUMBER = {3372139},
+       optDOI = {10.1007/s10851-015-0565-0},
+       optURL = {https://doi.org/10.1007/s10851-015-0565-0},
+}
+	
+
+@misc{peyre2020computational,
+      title={Computational Optimal Transport}, 
+      author={ Peyré, G. and  Cuturi, M.},
+      year={2020},
+      eprint={1803.00567},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+
+@inproceedings{NIPS2013_af21d0c9,
+ author = {Cuturi, M.},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {Burges, C. J. C.  and Bottou, L.  and  Welling, M. and Ghahramani, Z. and Weinberger, K. Q. },
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {{S}inkhorn Distances: Lightspeed Computation of Optimal Transport},
+ opturl = {https://proceedings.neurips.cc/paper/2013/file/af21d0c97db2e27e13572cbf59eb343d-Paper.pdf},
+ volume = {26},
+ year = {2013}
+}
+
+
+@InProceedings{genevay2017learning,
+  title = 	 {Learning Generative Models with {S}inkhorn Divergences},
+  author = 	 {Genevay, A. and Peyré, G. and Cuturi, M.},
+  booktitle = 	 {Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1608--1617},
+  year = 	 {2018},
+  editor = 	 {Storkey, Amos and Perez-Cruz, Fernando},
+  volume = 	 {84},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {09--11 Apr},
+  publisher =    {PMLR},
+  optpdf = 	 {http://proceedings.mlr.press/v84/genevay18a/genevay18a.pdf},
+  opturl = 	 {https://proceedings.mlr.press/v84/genevay18a.html},
+  optabstract = 	 {The ability to compare two degenerate probability distributions, that is two distributions supported on low-dimensional manifolds in much higher-dimensional spaces, is a crucial factor in the estimation of generative mod- els.It is therefore no surprise that optimal transport (OT) metrics and their ability to handle measures with non-overlapping sup- ports have emerged as a promising tool. Yet, training generative machines using OT raises formidable computational and statistical challenges, because of (i) the computational bur- den of evaluating OT losses, (ii) their instability and lack of smoothness, (iii) the difficulty to estimate them, as well as their gradients, in high dimension. This paper presents the first tractable method to train large scale generative models using an OT-based loss called Sinkhorn loss which tackles these three issues by relying on two key ideas: (a) entropic smoothing, which turns the original OT loss into a differentiable and more robust quantity that can be computed using Sinkhorn fixed point iterations; (b) algorithmic (automatic) differentiation of these iterations with seam- less GPU execution. Additionally, Entropic smoothing generates a family of losses interpolating between Wasserstein (OT) and Energy distance/Maximum Mean Discrepancy (MMD) losses, thus allowing to find a sweet spot leveraging the geometry of OT on the one hand, and the favorable high-dimensional sample complexity of MMD, which comes with un- biased gradient estimates. The resulting computational architecture complements nicely standard deep network generative models by a stack of extra layers implementing the loss function.}
+}
+
+
+@InProceedings{feydy2018interpolating,
+  title = 	 {Interpolating between Optimal Transport and {MMD} using {S}inkhorn Divergences},
+  author =       {Feydy, J. and S\'{e}journ\'{e}, T. and Vialard, F-X. and Amari, S. and Trouv\'{e}, A. and Peyr\'{e}, G.},
+  booktitle = 	 {Proceedings of the Twenty-Second International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {2681--2690},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, K. and Sugiyama, M.},
+  volume = 	 {89},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {16--18 Apr},
+  publisher =    {PMLR},
+  optpdf = 	 {http://proceedings.mlr.press/v89/feydy19a/feydy19a.pdf},
+  opturl = 	 {https://proceedings.mlr.press/v89/feydy19a.html},
+  optabstract = 	 {Comparing probability distributions is a fundamental problem in data sciences. Simple norms and divergences such as the total variation and the relative entropy only compare densities in a point-wise manner and fail to capture the geometric nature of the problem. In sharp contrast, Maximum Mean Discrepancies (MMD) and Optimal Transport distances (OT) are two classes of distances between measures that take into account the geometry of the underlying space and metrize the convergence in law.  This paper studies the Sinkhorn divergences, a family of geometric divergences that interpolates between MMD and OT. Relying on a new notion of geometric entropy, we provide theoretical guarantees for these divergences: positivity, convexity and metrization of the convergence in law. On the practical side, we detail a numerical scheme that enables the large scale application of these divergences for machine learning: on the GPU, gradients of the Sinkhorn loss can be computed for batches of a million samples.}
+}
+
+
+@book {RockWets98,
+    AUTHOR = {Rockafellar, R. T. and Wets, R. J.-B.},
+     TITLE = {Variational analysis},
+    SERIES = {Grundlehren der mathematischen Wissenschaften [Fundamental
+              Principles of Mathematical Sciences]},
+    VOLUME = {317},
+ PUBLISHER = {Springer-Verlag, Berlin},
+      YEAR = {1998},
+     optPAGES = {xiv+733},
+      optISBN = {3-540-62772-3},
+   optMRCLASS = {49-02 (46N10 47N10 49J52 49K40 90C30)},
+  optMRNUMBER = {1491362},
+optMRREVIEWER = {Francis H. Clarke},
+       optDOI = {10.1007/978-3-642-02431-3},
+       optURL = {https://doi.org/10.1007/978-3-642-02431-3},
+}
+
+
+@article {Franklin,
+    AUTHOR = {Franklin, J. and Lorenz, J.},
+     TITLE = {On the scaling of multidimensional matrices},
+   JOURNAL = {Linear Algebra Appl.},
+  FJOURNAL = {Linear Algebra and its Applications},
+    VOLUME = {114/115},
+      YEAR = {1989},
+     optPAGES = {717--735},
+      optISSN = {0024-3795},
+   optMRCLASS = {15A99},
+  optMRNUMBER = {986904},
+optMRREVIEWER = {D. S. Tracy},
+       optDOI = {10.1016/0024-3795(89)90490-4},
+       optURL = {https://doi.org/10.1016/0024-3795(89)90490-4},
+}
+
+@article {Birkhoff,
+    AUTHOR = {Birkhoff, G.},
+     TITLE = {Extensions of {J}entzsch's theorem},
+   JOURNAL = {Trans. Amer. Math. Soc.},
+  FJOURNAL = {Transactions of the American Mathematical Society},
+    VOLUME = {85},
+      YEAR = {1957},
+     optPAGES = {219--227},
+      optISSN = {0002-9947},
+   optMRCLASS = {46.2X},
+  optMRNUMBER = {87058},
+optMRREVIEWER = {E. H. Rothe},
+       optDOI = {10.2307/1992971},
+       optURL = {https://doi.org/10.2307/1992971},
+}
+
+
+@article {Danskin,
+    AUTHOR = {Danskin, J. M.},
+     TITLE = {The theory of {${\rm max-min}$}, with applications},
+   JOURNAL = {SIAM J. Appl. Math.},
+  FJOURNAL = {SIAM Journal on Applied Mathematics},
+    VOLUME = {14},
+      YEAR = {1966},
+     optPAGES = {641--664},
+      optISSN = {0036-1399},
+   optMRCLASS = {90.58},
+  optMRNUMBER = {210456},
+optMRREVIEWER = {L. D. Berkovitz},
+       optDOI = {10.1137/0114053},
+       optURL = {https://doi.org/10.1137/0114053},
+}
+
+@book{Bertsekas99,
+    AUTHOR = {Bertsekas, D. P.},
+     TITLE = {Nonlinear programming},
+    SERIES = {Athena Scientific Optimization and Computation Series},
+   optEDITION = {Second},
+ PUBLISHER = {Athena Scientific, Belmont, MA},
+      YEAR = {1999},
+     optPAGES = {xiv+777},
+      optISBN = {1-886529-00-0},
+   optMRCLASS = {49-01 (90-01)},
+  optMRNUMBER = {3444832},
+}
+
+
+@inproceedings{L1-ball,
+author = {Duchi, J. and Shalev-Shwartz, S. and Singer, Y. and Chandra, T.},
+title = {Efficient Projections onto the l1-Ball for Learning in High Dimensions},
+year = {2008},
+optisbn = {9781605582054},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+opturl = {https://doi.org/10.1145/1390156.1390191},
+optdoi = {10.1145/1390156.1390191},
+optabstract = {We describe efficient algorithms for projecting a vector onto the l1-ball. We present two methods for projection. The first performs exact projection in O(n) expected time, where n is the dimension of the space. The second works on vectors k of whose elements are perturbed outside the l1-ball, projecting in O(k log(n)) time. This setting is especially useful for online learning in sparse feature spaces such as text categorization applications. We demonstrate the merits and effectiveness of our algorithms in numerous batch and online learning tasks. We show that variants of stochastic gradient projection methods augmented with our efficient projection procedures outperform interior point methods, which are considered state-of-the-art optimization techniques. We also show that in online settings gradient updates with l1 projections outperform the exponentiated gradient algorithm while obtaining models with high degrees of sparsity.},
+booktitle = {Proceedings of the 25th International Conference on Machine Learning},
+pages = {272--279},
+numpages = {8},
+location = {Helsinki, Finland},
+series = {ICML '08}
+}
+
+  
+
+%%%%%%%%%%%%%%%%%%ARTICLE HT %%%%%%%%%%%%%%%%%%%
+
+
+@article{PMID25784504,
+  title={Neuronal identity genes regulated by super-enhancers are preferentially down-regulated in the striatum of {H}untington's disease mice},
+  author={Achour, M. and Le Gras, S. and Keime, C. and Parmentier, F. and Lejeune, F-X. and Boutillier, A-L. and Neri, C. and Davidson, I. and Merienne, K.},
+  journal={Human Molecular Genetics},
+  volume={24},
+  number={12},
+  pages={3481--3496},
+  year={2015},
+  publisher={Oxford University Press}
+}
+
+@article{PMID23159731,
+  title={mi{RNA}s regulate expression and function of extracellular matrix molecules},
+  author={Rutnam, Z. J. and Wight, T. N. and Yang, B. B.},
+  journal={Matrix Biology},
+  volume={32},
+  number={2},
+  pages={74--85},
+  year={2013},
+  publisher={Elsevier}
+}
+@article{PMID33906482,
+  title={High-throughput sequencing of {BACHD} mice reveals upregulation of neuroprotective mi{RNA}s at the pre-symptomatic stage of {H}untington's disease},
+  author={Olmo, I. G and Olmo, R. P. and Gon{\c{c}}alves, A. N. A. and Pires, R. G. W. and Marques, J. T. and Ribeiro, F. M.},
+  journal={ASN Neuro},
+  volume={13},
+  pages={17590914211009857},
+  year={2021},
+  publisher={SAGE Publications Sage CA: Los Angeles, CA}
+}
+@article{PMID35869509,
+  title={Widespread alterations in micro{RNA} biogenesis in human {H}untington's disease putamen},
+  author={Petry, S. and Keraudren, R. and Nateghi, B. and Loiselle, A. and Pircs, K. and Jakobsson, J. and Sephton, C. and Langlois, M. and St-Amour, I. and H{\'e}bert, S. S.},
+  journal={Acta Neuropathologica Communications},
+  volume={10},
+  number={1},
+  pages={1--11},
+  year={2022},
+  publisher={BioMed Central}
+}
+
+
+
+@article{chen2013enrichr,
+  title={Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool},
+  author={Chen, E. Y. and Tan, C. M. and Kou, Y. and Duan, Q. and Wang, Z. and Meirelles, G. V. and Clark, N. R. and Ma'ayan, A.},
+  journal={BMC Bioinformatics},
+  volume={14},
+  number={1},
+  pages={1--14},
+  year={2013},
+  publisher={BioMed Central}
+}
+@article{kuleshov2016enrichr,
+  title={Enrichr: a comprehensive gene set enrichment analysis web server 2016 update},
+  author={Kuleshov, M. V. and Jones, M. R. and Rouillard, A. D. and Fernandez, N. F. and Duan, Q. and Wang, Z. and Koplev, S. and Jenkins, S. L. and Jagodnik, K. M. and Lachmann, A. and McDermott, M. G. and Monteiro C. D. and Gundersen G. W. and Ma'ayan A.},
+  journal={Nucleic Acids Research},
+  volume={44},
+  number={W1},
+  pages={W90--W97},
+  year={2016},
+  publisher={Oxford University Press}
+}
+
+@article{xie2021357,
+  title={Gene set knowledge discovery with {E}nrichr},
+  author={Xie, Z. and Bailey, A. and Kuleshov, M. and Clarke, D. and Evangelista, J. and Jenkins, S. and Lachmann, A.},
+  journal={Current Protocols},
+  volume={1},
+  number={3},
+  pages={e90},
+  year={2021}
+}
+
+
+@article{Betel2010,
+
+title = {Comprehensive modeling of micro{RNA} targets predicts functional non-conserved and non-canonical sites},
+
+journal = {Genome Biology},
+
+volume = {11},
+
+pages = {R90},
+
+year = {2010},
+
+optmonth = {08},
+
+OPTissn = {},
+
+OPTdoi = {10.1186/gb-2010-11-8-r90},
+
+OPTurl = {https://doi.org/10.1186/gb-2010-11-8-r90},
+
+author = {Betel, D. and Koppal, A. and Agius, P. and Sander, C. and Leslie, C.},
+
+keywords = {},
+
+abstract = {}
+
+}
+
+@article{Ding2016,
+
+title = {{TarPmiR: a new approach for microRNA target site prediction}},
+
+journal = {BMC Bioinformatics},
+
+volume = {32},
+
+pages = {2768--2775},
+
+year = {2016},
+
+optmonth = {05},
+
+OPTissn = {},
+
+optdoi = {10.1093/bioinformatics/btw318},
+
+OPTurl = {},
+
+author = {Ding, J. and Li, X. and Hu, H.},
+
+keywords = {},
+
+abstract = {}
+
+}
+
+
+@article{LEWIS2005,
+
+title = {{Conserved seed pairing, often flanked by adenosines, indicates that thousands of human genes are microRNA targets}},
+
+journal = {Cell},
+
+volume = {120},
+
+number = {1},
+
+pages = {15--20},
+
+year = {2005},
+
+OPTissn = {0092-8674},
+
+OPTdoi = {https://doi.org/10.1016/j.cell.2004.12.035},
+
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S0092867404012607},
+
+author = {Benjamin P. Lewis and Christopher B. Burge and David P. Bartel}
+
+}
+
+@article{NK2021,
+title = {Integrative approaches for analysis of m{RNA} and micro{RNA} high-throughput data},
+journal = {Computational and Structural Biotechnology Journal},
+volume = {19},
+pages = {1154--1162},
+year = {2021},
+OPTissn = {2001-0370},
+optdoi = {https://doi.org/10.1016/j.csbj.2021.01.029},
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S2001037021000337},
+author = {P. V. Nazarov and S. Kreis},
+OPTkeywords = {microRNA, Transcriptomics, Data integration, Target prediction, Matrix factorization},
+OPTabstract = {Advanced sequencing technologies such as RNASeq provide the means for production of massive amounts of data, including transcriptome-wide expression levels of coding RNAs (mRNAs) and non-coding RNAs such as miRNAs, lncRNAs, piRNAs and many other RNA species. In silico analysis of datasets, representing only one RNA species is well established and a variety of tools and pipelines are available. However, attaining a more systematic view of how different players come together to regulate the expression of a gene or a group of genes requires a more intricate approach to data analysis. To fully understand complex transcriptional networks, datasets representing different RNA species need to be integrated. In this review, we will focus on miRNAs as key post-transcriptional regulators summarizing current computational approaches for miRNA:target gene prediction as well as new data-driven methods to tackle the problem of comprehensively and accurately dissecting miRNome-targetome interactions.}
+}
+
+
+%Hyeseung Lee and Robert J. Fenster and S. Sebastian Pineda and Whitney S. Gibbs and Shahin Mohammadi and Jose Davila-Velderrain and Francisco J. Garcia and Martine Therrien and Hailey S. Novis and Fan Gao and Hilary Wilkinson and Thomas Vogt and Manolis Kellis and Matthew J. LaVoie and Myriam Heiman
+@article{LEE2020891,
+title = {Cell Type-Specific Transcriptomics Reveals that Mutant Huntingtin Leads to Mitochondrial RNA Release and Neuronal Innate Immune Activation},
+journal = {Neuron},
+volume = {107},
+number = {5},
+pages = {891--908},
+year = {2020},
+optissn = {0896-6273},
+OPTdoi = {https://doi.org/10.1016/j.neuron.2020.06.021},
+OPTurl = {https://www.sciencedirect.com/science/article/pii/S089662732030475X},
+author  = {Lee, H. and Fenster, R. J.  and Pineda, S. S. and Gibbs, W. S.  and
+                  Mohammadi, S.  and Davila-Velderrain,  J.  and Garcia, F. J.
+                  and  Therrien,  M. and  Novis,  H.   S.   and Gao,  F.   and
+                  Wilkinson,  H.  and  Vogt,  T. and  Kellis,  M. and  LaVoie,
+                  M. J. and Heiman, M.},
+OPTabstract = {Summary The mechanisms  by which mutant huntingtin (mHTT) leads
+                  to neuronal cell death in  Huntington’s disease (HD) are not
+                  fully understood.  To gain  new molecular insights,  we used
+                  single  nuclear RNA  sequencing (snRNA-seq)  and translating
+                  ribosome   affinity    purification   (TRAP)    to   conduct
+                  transcriptomic analyses  of caudate/putamen  (striatal) cell
+                  type-specific gene expression changes  in human HD and mouse
+                  models of HD. In striatal spiny projection neurons, the most
+                  vulnerable  cell  type  in  HD,  we  observe  a  release  of
+                  mitochondrial  RNA (mtRNA)  (a potent  mitochondrial-derived
+                  innate immunogen)  and a concomitant upregulation  of innate
+                  immune signaling  in spiny  projection neurons.  Further, we
+                  observe that  the released mtRNAs  can directly bind  to the
+                  innate immune  sensor protein  kinase R (PKR).  We highlight
+                  the   importance  of   studying   cell  type-specific   gene
+                  expression dysregulation in HD  pathogenesis and reveal that
+                  the  activation  of  innate  immune signaling  in  the  most
+                  vulnerable  HD   neurons  provides  a  novel   framework  to
+                  understand  the  basis  of  mHTT  toxicity  and  raises  new
+                  therapeutic opportunities.}
+}
+
+
+
+%M{\'e}gret, Lucile and Gris, Barbara and Sasidharan Nair, Satish and Cevost, Jasmin and Wertz, Mary and Aaronson, Jeff and Rosinski, Jim and Vogt, Thomas and Wilkinson, Hilary and Heiman, Myriam and Neri, Christian
+@article{megret:hal-03151218,
+  TITLE = {{Shape deformation analysis reveals the temporal dynamics of cell-type-specific homeostatic and pathogenic responses to mutant huntingtin}},
+  AUTHOR = {M{\'e}gret, L. and Gris, B. and Sasidharan Nair, S. and Cevost, J. and Wertz, M. and Aaronson, J. and Rosinski, J. and Vogt, T. and Wilkinson, H. and Heiman, M. and Neri, C.},
+  OPTURL = {https://hal.sorbonne-universite.fr/hal-03151218},
+  JOURNAL = {{eLife}},
+  PUBLISHER = {{eLife Sciences Publication}},
+  VOLUME = {10},
+  PAGES = {e64984},
+  YEAR = {2021},
+  OPTDOI = {10.7554/eLife.64984},
+  OPTPDF = {https://hal.sorbonne-universite.fr/hal-03151218/file/elife-64984-v1.pdf},
+  OPTHAL_ID = {hal-03151218},
+  HAL_VERSION = {v1},
+}
+
+%Maniatis, Silas and {\"A}ij{\"o}, Tarmo and Vickovic, Sanja and Braine, Catherine and Kang, Kristy and Mollbrink, Annelie and Fagegaltier, Delphine and Andrusivov{\'a}, {\v Z}aneta and Saarenp{\"a}{\"a}, Sami and Saiz-Castro, Gonzalo and Cuevas, Miguel and Watters, Aaron and Lundeberg, Joakim and Bonneau, Richard and Phatnani, Hemali
+
+@article {Maniatis89,
+	author  =   {Maniatis,  S. and {\"A}ij{\"o}, T.  and  Vickovic, S. and
+                  Braine,   C.   and   Kang,  K.    and  Mollbrink,   A.   and
+                  Fagegaltier,   D.   and   Andrusivov{\'a},   {\v  Z}.    and
+                  Saarenp{\"a}{\"a}, S.   and Saiz-Castro, G.  and  Cuevas, M.
+                  and  Watters, A.  and  Lundeberg, J.   and  Bonneau, R.  and
+                  Phatnani, H.},
+	title = {Spatiotemporal dynamics of molecular pathology in amyotrophic lateral sclerosis},
+	volume = {364},
+	number = {6435},
+	pages = {89--93},
+	year = {2019},
+	OPTdoi = {10.1126/science.aav9776},
+	OPTpublisher = {American Association for the Advancement of Science},
+	optabstract = {Amyotrophic lateral sclerosis (ALS) is a progressive motor neuron disease that affects nerve cells in the 		brain and the spinal cord. It has proven difficult to identify the early stages of disease and where it spreads within the 	body. Maniatis et al. used RNA sequencing to define transcriptomic changes over the course of disease in different 		regions of the spinal cord of a mouse ALS model and a postmortem human ALS spinal cord. From changes in gene 		expression, they identified disease-associated pathways and established the key steps in motor neuron degeneration 	observed in ALS.Science, this issue p. 89Paralysis occurring in amyotrophic lateral sclerosis (ALS) results from 		denervation of skeletal muscle as a consequence of motor neuron degeneration. Interactions between motor neurons 	and glia contribute to motor neuron loss, but the spatiotemporal ordering of molecular events that drive these 			processes in intact spinal tissue remains poorly understood. Here, we use spatial transcriptomics to obtain gene 		expression measurements of mouse spinal cords over the course of disease, as well as of postmortem tissue from 		ALS patients, to characterize the underlying molecular mechanisms in ALS. We identify pathway dynamics, 			distinguish regional differences between microglia and astrocyte populations at early time points, and discern 			perturbations in several transcriptional pathways shared between murine models of ALS and human postmortem 		spinal cords.},
+	OPTissn = {0036-8075},
+	OPTURL = {https://science.sciencemag.org/content/364/6435/89},
+	opteprint = {https://science.sciencemag.org/content/364/6435/89.full.pdf},
+	journal = {Science}
+}
+
+
+
+
+%author = {Benayoun, Bérénice and Pollina, Elizabeth and Singh, Param and Mahmoudi, Salah and Harel, Itamar and Casey, Kerriann and Dulken, Ben and Kundaje, Anshul and Brunet, Anne},
+@Article{Benayoun19,
+author = {Benayoun, B. and Pollina, E. and Singh, P. and Mahmoudi, S. and Harel, I. and Casey, K. and Dulken, B. and Kundaje, A. and Brunet, A.},
+title = {Remodeling of epigenome and transcriptome landscapes with aging in mice reveals widespread induction of inflammatory responses},
+  journal = {Genome Research},
+  OPTdoi = {10.1101/gr.240093.118},
+  year = {2019},
+  OPTmonth = {03},
+  OPTkey = 	 {},
+  volume = 	 {29},
+  number = 	 {4},
+  pages = 	 {697--709},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}        
+
+
+
+
+@Article{ZWDSL19,
+  author = 	 {Zhao, J. and Wang, H. and Dong, L. and Sun, S. and Li, L.},
+  title = 	 {mi{RNA}-20b inhibits cerebral ischemia-induced inflammation through targeting {NLRP3}},
+  journal = 	 {Int. J. Mol. Med.},
+  year = 	 {2019},
+  OPTkey = 	 {},
+  volume = 	 {43},
+  number = 	 {3},
+  pages = 	 {1167--1178},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@INPROCEEDINGS {Nadif2010,
+author = {Govaert, G. and Nadif, M.},
+booktitle = {Machine Learning and Applications, Fourth International Conference on},
+title = {Model-Based Co-clustering for Continuous Data},
+year = {2010},
+volume = {},
+issn = {},
+pages = {175--180},
+keywords = {co-clustering;mixture model;em algorithm},
+OPTdoi = {10.1109/ICMLA.2010.33},
+OPTurl = {https://doi.ieeecomputersociety.org/10.1109/ICMLA.2010.33},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {dec}
+}
+
+
+
+
+@article{Coclust,
+author = {Role, F. and Morbieu, S. and Nadif, M.},
+year = {2019},
+month = {03},
+pages = {1--29},
+title = {CoClust: A Python Package for Co-Clustering},
+volume = {88},
+journal = {Journal of statistical software},
+OPTdoi = {10.18637/jss.v088.i07}
+}  
+  
+  
+  @Article{blockcluster,
+    title = {{blockcluster}: An {R} Package for Model-Based
+      Co-Clustering},
+    author = {Parmeet, S. B. and and  Iovleff, S. and       Govaert, G.},
+    journal = {Journal of Statistical Software},
+    year = {2017},
+    volume = {76},
+    number = {9},
+    pages = {1--24},
+    OPTdoi = {10.18637/jss.v076.i09},
+  }
+
+
+
+
+@Article{lomet:hal-00913680,
+  author={Lomet, A. and  Govaert, G. and  Grandvalet, Y.},
+  title={{Model selection for Gaussian latent block clustering with the integrated classification likelihood}},
+  journal={Advances in Data Analysis and Classification},
+  year=2018,
+  volume={12},
+  number={3},
+  pages={489--508},
+  month={September},
+  keywords={Co-clustering; Latent block model; Model selection; Continuous data; Integrated classification likel},
+  OPTdoi={10.1007/s11634-013-0161-3},
+  OPTabstract={ Block clustering aims to reveal homogeneous block structures in a data table. Among the different approaches of block clustering, we consider here a model-based method: the Gaussian latent block model for continuous data which is an extension of the Gaussian mixture model for one-way clustering. For a given data table, several candidate models are usually examined, which differ for example in the number of clusters. Model selection then becomes a critical issue. To this end, we develop a criterion based on an approximation of the integrated classification likelihood for the Gaussian latent block model, and propose a Bayesian information criterion-like variant following the same pattern. We also propose a non-asymptotic exact criterion, thus circumventing the controversial definition of the asymptotic regime arising from the dual nature of the rows and columns in co-clustering. The experimental results show steady performances of these criteria for medium to large data tables.},
+  OPTurl={https://ideas.repec.org/a/spr/advdac/v12y2018i3d10.1007_s11634-013-0161-3.html}
+}
+
+@book{melis2019optimal,
+  title={Optimal Transport in Structured Domains: Algorithms and Applications},
+  author={Melis, D. A. and Massachusetts Institute of Technology. Department of Electrical Engineering and Computer Science},
+  url={https://books.google.fr/books?id=-JNnzQEACAAJ},
+  year={2019},
+  publisher={Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science}
+}
+
+
+
+
+
+@inproceedings{peyre:hal-01322992,
+  TITLE = {{Gromov-Wasserstein Averaging of Kernel and Distance Matrices}},
+  AUTHOR = {Peyr{\'e}, G. and Cuturi, M. and Solomon, J.},
+  OPTURL = {https://hal.archives-ouvertes.fr/hal-01322992},
+  BOOKTITLE = {{ICML 2016}},
+  ADDRESS = {New-York, United States},
+  SERIES = {Proc. 33rd International Conference on Machine Learning },
+  YEAR = {2016},
+  MONTH = Jun,
+  KEYWORDS = {Gromov-Wasserstein  ;  Optimal Transport  ;  Wasserstein  ;  metric spaces  ;  shapes},
+  OPTPDF = {https://hal.archives-ouvertes.fr/hal-01322992/file/GWBarycentersICML16.pdf},
+  HAL_ID = {hal-01322992},
+  HAL_VERSION = {v1},
+}
+
+
+@Article{spatstat,
+    title = {{spatstat}: An {R} Package for Analyzing Spatial Point
+      Patterns},
+    author = {Baddeley, A. and Turner, R.},
+    journal = {Journal of Statistical Software},
+    year = {2005},
+    volume = {12},
+    number = {6},
+    pages = {1--42},
+    OPTurl = {http://www.jstatsoft.org/v12/i06/},
+  }
+
+
+@article {Lavancier2015,
+    AUTHOR = {Lavancier, F. and Møller, J. and Rubak, E.},
+     TITLE = {Determinantal point process models and statistical inference},
+   JOURNAL = {J. R. Stat. Soc. Ser. B. Stat. Methodol.},
+  FJOURNAL = {Journal of the Royal Statistical Society. Series B.
+              Statistical Methodology},
+    VOLUME = {77},
+      YEAR = {2015},
+    NUMBER = {4},
+     PAGES = {853--877},
+      optISSN = {1369-7412},
+   optMRCLASS = {62M30 (60G55)},
+  optMRNUMBER = {3382600},
+optMRREVIEWER = {Ilya S. Molchanov},
+       optDOI = {10.1111/rssb.12096},
+       optURL = {https://doi.org/10.1111/rssb.12096},
+}
+
+@InProceedings{Genevay18,
+ author = 	 {Genevay, A. and  Peyr{\'e}, G. and Cuturi, M.},
+  title = 	 {Learning Generative Models with Sinkhorn Divergences},
+  booktitle = 	 {Proceedings of the Twenty-First International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {1608--1617},
+  year = 	 {2018},
+  editor = 	 {Amos Storkey and Fernando Perez-Cruz},
+  volume = 	 {84},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Playa Blanca, Lanzarote, Canary Islands},
+  month = 	 {09--11 Apr},
+  publisher = 	 {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v84/genevay18a/genevay18a.pdf},
+  OPTurl = 	 {http://proceedings.mlr.press/v84/genevay18a.html},
+  OPTabstract = 	 {The ability to compare two degenerate probability distributions, that is two distributions supported on low-dimensional manifolds in much higher-dimensional spaces, is a crucial factor in the estimation of generative mod- els.It is therefore no surprise that optimal transport (OT) metrics and their ability to handle measures with non-overlapping sup- ports have emerged as a promising tool. Yet, training generative machines using OT raises formidable computational and statistical challenges, because of (i) the computational bur- den of evaluating OT losses, (ii) their instability and lack of smoothness, (iii) the difficulty to estimate them, as well as their gradients, in high dimension. This paper presents the first tractable method to train large scale generative models using an OT-based loss called Sinkhorn loss which tackles these three issues by relying on two key ideas: (a) entropic smoothing, which turns the original OT loss into a differentiable and more robust quantity that can be computed using Sinkhorn fixed point iterations; (b) algorithmic (automatic) differentiation of these iterations with seam- less GPU execution. Additionally, Entropic smoothing generates a family of losses interpolating between Wasserstein (OT) and Energy distance/Maximum Mean Discrepancy (MMD) losses, thus allowing to find a sweet spot leveraging the geometry of OT on the one hand, and the favorable high-dimensional sample complexity of MMD, which comes with un- biased gradient estimates. The resulting computational architecture complements nicely standard deep network generative models by a stack of extra layers implementing the loss function.}
+}
+
+@inproceedings{Genevay16,
+ author = {Genevay, A. and Cuturi, M. and Peyr{\'e}, G. and Bach, F.},
+ title = {Stochastic Optimization for Large-scale Optimal Transport},
+ booktitle = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
+ series = {NIPS'16},
+ year = {2016},
+ OPTisbn = {978-1-5108-3881-9},
+ location = {Barcelona, Spain},
+ pages = {3440--3448},
+ optnumpages = {9},
+ OPTurl = {http://dl.acm.org/citation.cfm?id=3157382.3157482},
+ acmid = {3157482},
+ publisher = {Curran Associates Inc.},
+ address = {USA},
+} 
+
+
+@inproceedings{Cuturi13,
+ author = {Cuturi, M.},
+ title = {Sinkhorn Distances: Lightspeed Computation of Optimal Transport},
+ booktitle = {Proceedings of the 26th International Conference on Neural Information Processing Systems - Volume 2},
+ series = {NIPS'13},
+ year = {2013},
+ location = {Lake Tahoe, Nevada},
+ pages = {2292--2300},
+ optnumpages = {9},
+ OPTurl = {http://dl.acm.org/citation.cfm?id=2999792.2999868},
+ acmid = {2999868},
+ publisher = {Curran Associates Inc.},
+ address = {USA},
+}
+
+@book{COT19,
+  title={Computational Optimal Transport: With Applications to Data Science},
+  author={Peyr{\'e}, G. and Cuturi, M.},
+  OPTisbn={9781680835502},
+  series={Foundations and Trends in Machine Learning Series},
+  OPTurl={https://books.google.fr/books?id=J0BiwgEACAAJ},
+  year={2019},
+  publisher={Now Publishers}
+}
+
+
+@Book{Santambrogio15,
+  author = 	 {Santambrogio, F.},
+  ALTeditor = 	 {},
+  title = 	 {Optimal Transport for Applied Mathematicians},
+  publisher = 	 {Birkhäuser Basel},
+  year = 	 {2015},
+  OPTkey = 	 {},
+  volume = 	 {87},
+  OPTnumber = 	 {},
+  series = 	 {Progress in Nonlinear Differential Equations and Their Applications},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+
+@Article{Kanto42,
+  author = 	 {Kantorovich, L},
+  title = 	 {On the transfer of masses (in Russian)},
+  journal = 	 {Doklady Akademii Nauk USSR},
+  year = 	 {1942},
+  OPTkey = 	 {},
+  volume = 	 {37},
+  number = 	 {2},
+  pages = 	 {227--229},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@article{article,
+author = {Govaert, G. and Mohamed, N.},
+year = {2008},
+month = {02},
+pages = {3233--3245},
+title = {Block clustering with Bernoulli mixture models: Comparison of different approaches},
+volume = {52},
+journal = {Computational Statistics & Data Analysis},
+OPTdoi = {10.1016/j.csda.2007.09.007}
+}
+
+
+
+
+
+
+@ARTICLE{1637417,
+author={Patrikainen, A. and Meila, M.},
+journal={IEEE Transactions on Knowledge and Data Engineering},
+title={Comparing subspace clusterings},
+year={2006},
+volume={18},
+number={7},
+pages={902--916},
+keywords={data mining;pattern clustering;subspace clusterings;FastDOC algorithms;HARP algorithms;PROCLUS algorithms;ORCLUS algorithms;SSPC algorithms;partial clusterings;overlapping clusterings;binary data matrices;Clustering algorithms;Partitioning algorithms;Gene expression;Subspace clustering;projected clustering;distance;feature selection;cluster validation.},
+OPTdoi={10.1109/TKDE.2006.106},
+OPTISSN={2326-3865},
+month={July},}
+
+
+
+@article{PONTES2015163,
+title = {Biclustering on expression data: A review},
+journal = {Journal of Biomedical Informatics},
+volume = {57},
+pages = {163--180},
+year = {2015},
+OPTissn = {1532-0464},
+OPTdoi = {https://doi.org/10.1016/j.jbi.2015.06.028},
+OPTurl = {http://www.sciencedirect.com/science/article/pii/S1532046415001380},
+author = {Pontes, B. and  Giráldez, R. and Aguilar-Ruiz, J. S.},
+keywords = {Microarray analysis, Gene expression data, Biclustering techniques},
+abstract = {Biclustering has become a popular technique for the study of gene expression data, especially for discovering functionally related gene sets under different subsets of experimental conditions. Most of biclustering approaches use a measure or cost function that determines the quality of biclusters. In such cases, the development of both a suitable heuristics and a good measure for guiding the search are essential for discovering interesting biclusters in an expression matrix. Nevertheless, not all existing biclustering approaches base their search on evaluation measures for biclusters. There exists a diverse set of biclustering tools that follow different strategies and algorithmic concepts which guide the search towards meaningful results. In this paper we present a extensive survey of biclustering approaches, classifying them into two categories according to whether or not use evaluation metrics within the search method: biclustering algorithms based on evaluation measures and non metric-based biclustering algorithms. In both cases, they have been classified according to the type of meta-heuristics which they are based on.}
+}
+
+
+@inproceedings{10.1145/502512.502550,
+author = {Dhillon, I. S.},
+title = {Co-Clustering Documents and Words Using Bipartite Spectral Graph Partitioning},
+year = {2001},
+OPTisbn = {158113391X},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+OPTurl = {https://doi.org/10.1145/502512.502550},
+OPTdoi = {10.1145/502512.502550},
+booktitle = {Proceedings of the Seventh ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {269-–274},
+optnumpages = {6},
+location = {San Francisco, California},
+series = {KDD ’01}
+}
+
+%author = {Langfelder, Peter and Cantle, Jeffrey and Chatzopoulou, Doxa and Wang, Nan and Gao, Fuying and Al-Ramahi, Ismael and Lu, Xiao-Hong and Ramos, Eliana and Merz, Karla and Zhao, Yining and Deverasetty, Sandeep and Tebbe, Andreas and Schaab, Christoph and Lavery, Daniel and Howland, David and Kwak, Seung and Botas, Juan and Aaronson, Jeffrey and Rosinski, Jim and Yang, Xiaoming},
+@article{Langfelder2016,
+author = {Langfelder, P. and Cantle, J. and Chatzopoulou, D. and Wang, N. and Gao, F. and Al-Ramahi, I. and Lu, X. and Ramos, E. and Merz, K. and Zhao, Y. and Deverasetty, S. and Tebbe, A. and Schaab, C. and Lavery, D. and Howland, D. and Kwak, S. and Botas, J. and Aaronson, J. and Rosinski, J. and Yang, X.},
+year = {2016},
+month = {02},
+pages = {622--633},
+title = {Integrated genomics and proteomics define {H}untingtin {CAG}length–dependent networks in mice},
+volume = {19},
+journal = {Nature Neuroscience},
+OPTdoi = {10.1038/nn.4256}
+}
+
+%author = {Langfelder, Peter and Gao, Fuying and Wang, Nan and Howland, David and Kwak, Seung and Vogt, Thomas and Aaronson, Jeffrey and Rosinski, Jim and Coppola, Giovanni and Horvath, Steve and Yang, Xiaoming},
+@article{Langfelder2018,
+author = {Langfelder, P. and Gao, F. and Wang, N. and Howland, D. and Kwak, S. and Vogt, T. and Aaronson, J. and Rosinski, J. and Coppola, G. and Horvath, S. and Yang, X.},
+year = {2018},
+volume = {13},
+number = {1},
+title = {Micro{RNA} signatures of endogenous {H}untingtin {CAG} repeat expansion in mice.},
+journal = {PloS One}
+}
+
+
+@misc{yang2020teaser,
+    title={TEASER: Fast and Certifiable Point Cloud Registration},
+    author={Heng, Y. and  Shi, J. and Carlone, L.},
+    year={2020},
+    eprint={2001.07715},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    note = {arXiv:2001.07715}
+}
+
+
+
+@article{GOVAERT20083233,
+title = "Block clustering with Bernoulli mixture models: Comparison of different approaches",
+journal = "Computational Statistics & Data Analysis",
+volume = "52",
+number = "6",
+pages = "3233--3245",
+year = "2008",
+OPTissn = "0167-9473",
+OPTdoi = "https://doi.org/10.1016/j.csda.2007.09.007",
+opturl = "http://www.sciencedirect.com/science/article/pii/S0167947307003441",
+author = "Govaert, G and  Nadif, M.",
+keywords = "Block mixture model, Latent block model, EM algorithm, Simultaneous clustering, Co-clustering",
+abstract = "The block or simultaneous clustering problem on a set of objects and a set of variables is embedded in the mixture model. Two algorithms have been developed: block EM as part of the maximum likelihood and fuzzy approaches, and block CEM as part of the classification maximum likelihood approach. A unified framework for obtaining different variants of block EM is proposed. These variants are studied and their performances evaluated in comparison with block CEM, two-way EM and two-way CEM, i.e EM and CEM applied separately to the two sets."
+}
+
+
+
+@article{AILEM2016160,
+title = "Graph modularity maximization as an effective method for co-clustering text data",
+journal = "Knowledge-Based Systems",
+volume = "109",
+pages = "160--173",
+year = "2016",
+OPTissn = "0950-7051",
+OPTdoi = "https://doi.org/10.1016/j.knosys.2016.07.002",
+OPTurl = "http://www.sciencedirect.com/science/article/pii/S0950705116302064",
+author = "Ailem, M.  and Role, F. and  Nadif, M.",
+keywords = "Co-clustering, Modularity",
+abstract = "In this paper we show how the modularity measure can serve as a useful criterion for co-clustering document-term matrices. We present and investigate the performance of CoClus, a novel, effective block-diagonal co-clustering algorithm which directly maximizes this modularity measure. The maximization is performed using an iterative alternating optimization procedure, in contrast to algorithms that use spectral relaxations of the discrete optimization problems. Extensive comparative experiments performed on various document-term datasets demonstrate that this approach is very effective, stable, and outperforms other block-diagonal co-clustering algorithms devoted to the same task. Another important advantage of using modularity in the co-clustering context is that it provides a novel, simple way of determining the appropriate number of co-clusters. Availability: an implementation of CoClus is available as part of the recently released coclust Python package which is available at: https://pypi.python.org/pypi/coclust"
+}
+
+@phdthesis{brault:tel-01090340,
+  title = "Estimation and model selection for the latent block model",
+  author =" Brault, V.",
+  OPTurl = "https://hal.inria.fr/tel-01090340",
+  number = "2014PA112238",
+  school = "Universit{\'e} Paris Sud - Paris XI",
+  year = "2014",
+  month = "Sep",
+  keywords = "Variational Approximation ; Integrated Completed Likelihood criterion ; Gibbs Sampling ; Latent Block Model ; Approximation variationnelle ; Echantillonneur de Gibbs ; Mod{\`e}le des blocs latents ; Crit{\`e}re ICL",
+  type = "Theses",
+  OPTpdf= "https://hal.inria.fr/tel-01090340/file/VA2_BRAULT_VINCENT_30092014.pdf",
+  OPThal_id = "tel-01090340",
+  hal_version = "v1",
+}
+
+
+@article{laclau,
+author = {Laclau, C. and Brault, V.},
+year = {2018},
+month = {10},
+pages = {446--473},
+title = {Noise-free Latent Block Model for High Dimensional Data},
+journal = {Data Mining and Knowledge Discovery},
+OPTdoi = {10.1007/s10618-018-0597-3}
+}
+
+
+@article{Keribin2014,
+author = {Brault, V. and Keribin, C. and Celeux, G. and Govaert, G.},
+year = {2014},
+volume = {25},
+pages = {1201--1216},
+title = {Estimation and Selection for the Latent Block Model on Categorical Data},
+journal = {Statistics and Computing}
+}
+
+
+
+@article{Partrikainen2006,
+author = {Patrikainen, A. and Meila, M.},
+year = {2006},
+OPTmonth = {08},
+pages = {902--916},
+title = {Comparing Subspace Clusterings},
+volume = {18},
+journal = {Knowledge and Data Engineering, IEEE Transactions on},
+OPTdoi = {10.1109/TKDE.2006.106}
+}
+
+@inproceedings{Laclau17,
+  TITLE = {{Co-clustering through Optimal Transport}},
+  AUTHOR = {Laclau, C. and Redko, I. and Matei, B. and Bennani, Y. and Brault, V.},
+  OPTURL = {https://hal.archives-ouvertes.fr/hal-01539101},
+  BOOKTITLE = {{34th International Conference on Machine Learning}},
+  ADDRESS = {Sydney, Australia},
+  OPTPUBLISHER = {{Proceedings of Machine Learning Research}},
+  OPTSERIES = {Proceedings of the 34th International Conference on Machine Learning},
+  VOLUME = {70},
+  PAGES = {1955--1964},
+  YEAR = {2017},
+  MONTH = Aug,
+  OPTPDF = {https://hal.archives-ouvertes.fr/hal-01539101/file/Laclau2017Co.pdf},
+  OPTHAL_ID = {hal-01539101},
+  OPTHAL_VERSION = {v1},
+}
+
+
+@article{10.1007/s10618-018-0597-3,
+author = {Laclau, C. and Brault, V.},
+title = {Noise-Free Latent Block Model for High Dimensional Data},
+year = {2019},
+issue_date = {March     2019},
+publisher = {Kluwer Academic Publishers},
+address = {USA},
+volume = {33},
+number = {2},
+issn = {1384-5810},
+OPTurl = {https://doi.org/10.1007/s10618-018-0597-3},
+OPTdoi = {10.1007/s10618-018-0597-3},
+abstract = {Co-clustering is known to be a very powerful and efficient approach in unsupervised learning because of its ability to partition data based on both the observations and the variables of a given dataset. However, in high-dimensional context co-clustering methods may fail to provide a meaningful result due to the presence of noisy and/or irrelevant features. In this paper, we tackle this issue by proposing a novel co-clustering model which assumes the existence of a noise cluster, that contains all irrelevant features. A variational expectation-maximization-based algorithm is derived for this task, where the automatic variable selection as well as the joint clustering of objects and variables are achieved via a Bayesian framework. Experimental results on synthetic datasets show the efficiency of our model in the context of high-dimensional noisy data. Finally, we highlight the interest of the approach on two real datasets which goal is to study genetic diversity across the world.},
+journal = {Data Min. Knowl. Discov.},
+month = mar,
+pages = {446-–473},
+optnumpages = {28},
+keywords = {Latent block model, Feature selection, Clustering, Biclustering, High dimensional data}
+}
+
+
+
+
+@article{megret:inserm-02512089,
+  TITLE = {{Combining feature selection and shape analysis uncovers precise rules for miRNA regulation in Huntington's disease mice}},
+  AUTHOR =  {M{\'e}gret, L. and  Sasidharan Nair, S. and Dancourt,  J. and
+                  Aaronson, J. and Rosinski, J. and Neri, C.},
+  OPTURL = {https://www.hal.inserm.fr/inserm-02512089},
+  JOURNAL = {{BMC Bioinformatics}},
+  PUBLISHER = {{BioMed Central}},
+  VOLUME = {21},
+  NUMBER = {1},
+  PAGES = {75},
+  YEAR = {2020},
+  OPTMONTH = {Feb},
+  OPTDOI = {10.1186/s12859-020-3418-9},
+  optKEYWORDS = {Biological precision ; Machine learning ; Multidimensional data ; Predictive accuracy ; Shape analysis ; miRNA regulation},
+  OPTPDF = {https://www.hal.inserm.fr/inserm-02512089/file/s12859-020-3418-9.pdf},
+  HAL_ID = {inserm-02512089},
+  OPTHAL_VERSION = {v1},
+}
+
+
+@inproceedings{fatras2020,
+ address = {Palermo, Italy},
+ author = {Fatras, K. and Zine, Y. and Flamary, R. and Gribonval, R. and Courty, N.},
+ booktitle = {The 23nd International Conference on Artificial Intelligence and Statistics},
+ OPThal_id = {hal-02502329},
+ OPThal_version = {v1},
+ OPTmonth = {June},
+ OPTpdf = {https://hal.archives-ouvertes.fr/hal-02502329/file/mbot_arxiv.pdf},
+ series = {PMLR},
+ title = {Learning with minibatch {W}asserstein : asymptotic and gradient properties},
+ OPTurl = {https://hal.archives-ouvertes.fr/hal-02502329},
+ volume = {volume 108},
+ year = {2020}
+}
+
+@ARTICLE{yang2021teaser,
+  author={Yang, H. and Shi, J. and Carlone, L.},
+  journal={IEEE Transactions on Robotics}, 
+  title={{TEASER}: Fast and Certifiable Point Cloud Registration}, 
+  year={2021},
+  volume={37},
+  number={2},
+  pages={314--333},
+  optdoi={10.1109/TRO.2020.3033695}
+}
+
+
+@PhdThesis{MAD2019,
+  author = 	 {Alvarez-Melis, D.},
+  title = 	 {Optimal Transport in Structured Domains: Algorithms and Applications},
+  school = 	 {Massachusetts Institute of Technology},
+  year = 	 {2019},
+  OPTkey = 	 {},
+  OPTtype = 	 {},
+  OPTaddress = 	 {},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@Article{Lloyd1982,
+  author = 	 {Lloyd, S. P.},
+  title = 	 {Least Squares Quantization in {PCM}},
+  journal = 	 {IEEE Transactions on Information Theory},
+  year = 	 {1982},
+  OPTkey = 	 {},
+  volume = 	 {28},
+  optnumber = 	 {},
+  pages = 	 {129--137},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {},
+  optdoi={10.1109/TIT.1982.1056489}
+}
+
+
+@Manual{R,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2022},
+    url = {https://www.R-project.org/},
+  }
+
+

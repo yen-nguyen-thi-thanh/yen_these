@@ -1,0 +1,417 @@
+\begin{thebibliography}{58}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Achour et~al.(2015)Achour, Le~Gras, Keime, Parmentier, Lejeune,
+  Boutillier, Neri, Davidson, and Merienne]{PMID25784504}
+M.~Achour, S.~Le~Gras, C.~Keime, F.~Parmentier, F.-X. Lejeune, A.-L.
+  Boutillier, C.~Neri, I.~Davidson, and K.~Merienne.
+\newblock Neuronal identity genes regulated by super-enhancers are
+  preferentially down-regulated in the striatum of {H}untington's disease mice.
+\newblock \emph{Human Molecular Genetics}, 24\penalty0 (12):\penalty0
+  3481--3496, 2015.
+
+\bibitem[Ailem et~al.(2016)Ailem, Role, and Nadif]{AILEM2016160}
+M.~Ailem, F.~Role, and M.~Nadif.
+\newblock Graph modularity maximization as an effective method for
+  co-clustering text data.
+\newblock \emph{Knowledge-Based Systems}, 109:\penalty0 160--173, 2016.
+
+\bibitem[Alvarez-Melis(2019)]{MAD2019}
+D.~Alvarez-Melis.
+\newblock \emph{Optimal Transport in Structured Domains: Algorithms and
+  Applications}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 2019.
+
+\bibitem[Attouch et~al.(2010)Attouch, Bolte, Redont, and
+  Soubeyran]{attouch2013proximal}
+H.~Attouch, J.~Bolte, P.~Redont, and A.~Soubeyran.
+\newblock Proximal alternating minimization and projection methods for
+  nonconvex problems: an approach based on the {K}urdyka-{L}ojasiewicz
+  inequality.
+\newblock \emph{Math. Oper. Res.}, 35\penalty0 (2):\penalty0 438--457, 2010.
+
+\bibitem[Baddeley and Turner(2005)]{spatstat}
+A.~Baddeley and R.~Turner.
+\newblock {spatstat}: An {R} package for analyzing spatial point patterns.
+\newblock \emph{Journal of Statistical Software}, 12\penalty0 (6):\penalty0
+  1--42, 2005.
+
+\bibitem[Benayoun et~al.(2019)Benayoun, Pollina, Singh, Mahmoudi, Harel, Casey,
+  Dulken, Kundaje, and Brunet]{Benayoun19}
+B.~Benayoun, E.~Pollina, P.~Singh, S.~Mahmoudi, I.~Harel, K.~Casey, B.~Dulken,
+  A.~Kundaje, and A.~Brunet.
+\newblock Remodeling of epigenome and transcriptome landscapes with aging in
+  mice reveals widespread induction of inflammatory responses.
+\newblock \emph{Genome Research}, 29\penalty0 (4):\penalty0 697--709, 2019.
+
+\bibitem[Benedetti and Risler(1990)]{benedetti90}
+R.~Benedetti and J.-J. Risler.
+\newblock \emph{Real algebraic and semi-algebraic sets}.
+\newblock Actualit\'{e}s Math\'{e}matiques. [Current Mathematical Topics].
+  Hermann, Paris, 1990.
+
+\bibitem[Bertsekas(1999)]{Bertsekas99}
+D.~P. Bertsekas.
+\newblock \emph{Nonlinear programming}.
+\newblock Athena Scientific Optimization and Computation Series. Athena
+  Scientific, Belmont, MA, 1999.
+
+\bibitem[Betel et~al.(2010)Betel, Koppal, Agius, Sander, and Leslie]{Betel2010}
+D.~Betel, A.~Koppal, P.~Agius, C.~Sander, and C.~Leslie.
+\newblock Comprehensive modeling of micro{RNA} targets predicts functional
+  non-conserved and non-canonical sites.
+\newblock \emph{Genome Biology}, 11:\penalty0 R90, 2010.
+
+\bibitem[Birkhoff(1957)]{Birkhoff}
+G.~Birkhoff.
+\newblock Extensions of {J}entzsch's theorem.
+\newblock \emph{Trans. Amer. Math. Soc.}, 85, 1957.
+
+\bibitem[Bochnak et~al.(1998)Bochnak, Coste, and Roy]{bochnak98}
+J.~Bochnak, M.~Coste, and M.-F. Roy.
+\newblock \emph{Real algebraic geometry}, volume~36 of \emph{Ergebnisse der
+  Mathematik und ihrer Grenzgebiete (3) [Results in Mathematics and Related
+  Areas (3)]}.
+\newblock Springer-Verlag, Berlin, 1998.
+
+\bibitem[Brault et~al.(2014)Brault, Keribin, Celeux, and Govaert]{Keribin2014}
+V.~Brault, C.~Keribin, G.~Celeux, and G.~Govaert.
+\newblock Estimation and selection for the latent block model on categorical
+  data.
+\newblock \emph{Statistics and Computing}, 25:\penalty0 1201--1216, 2014.
+
+\bibitem[Charpentier et~al.(2021)Charpentier, James, and Ali]{Charpentier_2021}
+A.~Charpentier, M.~James, and H.~Ali.
+\newblock Predicting drought and subsidence risks in {F}rance.
+\newblock \emph{Natural Hazards and Earth System Sciences Discussion}, 2021.
+\newblock \doi{10.5194/nhess-2021-214}.
+\newblock In review.
+
+\bibitem[Chen et~al.(2013)Chen, Tan, Kou, Duan, Wang, Meirelles, Clark, and
+  Ma'ayan]{chen2013enrichr}
+E.~Y. Chen, C.~M. Tan, Y.~Kou, Q.~Duan, Z.~Wang, G.~V. Meirelles, N.~R. Clark,
+  and A.~Ma'ayan.
+\newblock Enrichr: interactive and collaborative html5 gene list enrichment
+  analysis tool.
+\newblock \emph{BMC Bioinformatics}, 14\penalty0 (1):\penalty0 1--14, 2013.
+
+\bibitem[Cuturi(2013{\natexlab{a}})]{Cuturi13}
+M.~Cuturi.
+\newblock Sinkhorn distances: Lightspeed computation of optimal transport.
+\newblock In \emph{Proceedings of the 26th International Conference on Neural
+  Information Processing Systems - Volume 2}, NIPS'13, pages 2292--2300, USA,
+  2013{\natexlab{a}}. Curran Associates Inc.
+
+\bibitem[Cuturi(2013{\natexlab{b}})]{NIPS2013_af21d0c9}
+M.~Cuturi.
+\newblock {S}inkhorn distances: Lightspeed computation of optimal transport.
+\newblock In C.~J.~C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.~Q.
+  Weinberger, editors, \emph{Advances in Neural Information Processing
+  Systems}, volume~26. Curran Associates, Inc., 2013{\natexlab{b}}.
+
+\bibitem[Cuturi and Doucet(2014)]{pmlr-v32-cuturi14}
+M.~Cuturi and A.~Doucet.
+\newblock Fast computation of {W}asserstein barycenters.
+\newblock In E.~P. Xing and T.~Jebara, editors, \emph{Proceedings of the 31st
+  International Conference on Machine Learning}, volume~32 of \emph{Proceedings
+  of Machine Learning Research}, pages 685--693. PMLR, 22--24 Jun 2014.
+
+\bibitem[Danskin(1966)]{Danskin}
+J.~M. Danskin.
+\newblock The theory of {${\rm max-min}$}, with applications.
+\newblock \emph{SIAM J. Appl. Math.}, 14, 1966.
+
+\bibitem[Dhillon(2001)]{10.1145/502512.502550}
+I.~S. Dhillon.
+\newblock Co-clustering documents and words using bipartite spectral graph
+  partitioning.
+\newblock In \emph{Proceedings of the Seventh ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, KDD ’01, pages
+  269--–274, New York, NY, USA, 2001. Association for Computing Machinery.
+
+\bibitem[Ding et~al.(2016)Ding, Li, and Hu]{Ding2016}
+J.~Ding, X.~Li, and H.~Hu.
+\newblock {TarPmiR: a new approach for microRNA target site prediction}.
+\newblock \emph{BMC Bioinformatics}, 32:\penalty0 2768--2775, 2016.
+
+\bibitem[Duchi et~al.(2008)Duchi, Shalev-Shwartz, Singer, and Chandra]{L1-ball}
+J.~Duchi, S.~Shalev-Shwartz, Y.~Singer, and T.~Chandra.
+\newblock Efficient projections onto the l1-ball for learning in high
+  dimensions.
+\newblock In \emph{Proceedings of the 25th International Conference on Machine
+  Learning}, ICML '08, pages 272--279, New York, NY, USA, 2008. Association for
+  Computing Machinery.
+
+\bibitem[Ecoto and Chambaz(2022)]{osasl2}
+G.~Ecoto and A.~Chambaz.
+\newblock Anticipating the cost of drought events in {F}rance by super
+  learning.
+\newblock Technical report, 2022.
+\newblock URL \url{https://arxiv.org/abs/2206.11545}.
+\newblock Submitted.
+
+\bibitem[Ecoto et~al.(2021)Ecoto, Bibaut, and Chambaz]{osasl1}
+G.~Ecoto, A.~F. Bibaut, and A.~Chambaz.
+\newblock One-step ahead sequential {S}uper {L}earning from short times series
+  of many slightly dependent data, and anticipating the cost of natural
+  disasters.
+\newblock Technical report, 2021.
+\newblock URL \url{https://arxiv.org/abs/2107.13291}.
+\newblock Submitted.
+
+\bibitem[Fatras et~al.(2020)Fatras, Zine, Flamary, Gribonval, and
+  Courty]{fatras2020}
+K.~Fatras, Y.~Zine, R.~Flamary, R.~Gribonval, and N.~Courty.
+\newblock Learning with minibatch {W}asserstein : asymptotic and gradient
+  properties.
+\newblock In \emph{The 23nd International Conference on Artificial Intelligence
+  and Statistics}, volume volume 108 of \emph{PMLR}, Palermo, Italy, 2020.
+
+\bibitem[Feydy et~al.(2019)Feydy, S\'{e}journ\'{e}, Vialard, Amari, Trouv\'{e},
+  and Peyr\'{e}]{feydy2018interpolating}
+J.~Feydy, T.~S\'{e}journ\'{e}, F.-X. Vialard, S.~Amari, A.~Trouv\'{e}, and
+  G.~Peyr\'{e}.
+\newblock Interpolating between optimal transport and {MMD} using {S}inkhorn
+  divergences.
+\newblock In K.~Chaudhuri and M.~Sugiyama, editors, \emph{Proceedings of the
+  Twenty-Second International Conference on Artificial Intelligence and
+  Statistics}, volume~89 of \emph{Proceedings of Machine Learning Research},
+  pages 2681--2690. PMLR, 16--18 Apr 2019.
+
+\bibitem[Genevay et~al.(2018)Genevay, Peyr{\'e}, and Cuturi]{Genevay18}
+A.~Genevay, G.~Peyr{\'e}, and M.~Cuturi.
+\newblock Learning generative models with sinkhorn divergences.
+\newblock In A.~Storkey and F.~Perez-Cruz, editors, \emph{Proceedings of the
+  Twenty-First International Conference on Artificial Intelligence and
+  Statistics}, volume~84 of \emph{Proceedings of Machine Learning Research},
+  pages 1608--1617, Playa Blanca, Lanzarote, Canary Islands, 09--11 Apr 2018.
+  PMLR.
+
+\bibitem[Govaert and Nadif(2010)]{Nadif2010}
+G.~Govaert and M.~Nadif.
+\newblock Model-based co-clustering for continuous data.
+\newblock In \emph{Machine Learning and Applications, Fourth International
+  Conference on}, pages 175--180, Los Alamitos, CA, USA, dec 2010. IEEE
+  Computer Society.
+
+\bibitem[Heng et~al.(2020)Heng, Shi, and Carlone]{yang2020teaser}
+Y.~Heng, J.~Shi, and L.~Carlone.
+\newblock Teaser: Fast and certifiable point cloud registration, 2020.
+\newblock arXiv:2001.07715.
+
+\bibitem[Kantorovich(1942)]{Kan42}
+L.~Kantorovich.
+\newblock On the translocation of masses.
+\newblock \emph{Dokl. Akad. Nauk SSSR}, pages 227--229, 1942.
+
+\bibitem[Kuleshov et~al.(2016)Kuleshov, Jones, Rouillard, Fernandez, Duan,
+  Wang, Koplev, Jenkins, Jagodnik, Lachmann, McDermott, D., W., and
+  A.]{kuleshov2016enrichr}
+M.~V. Kuleshov, M.~R. Jones, A.~D. Rouillard, N.~F. Fernandez, Q.~Duan,
+  Z.~Wang, S.~Koplev, S.~L. Jenkins, K.~M. Jagodnik, A.~Lachmann, M.~G.
+  McDermott, M.~C. D., G.~G. W., and M.~A.
+\newblock Enrichr: a comprehensive gene set enrichment analysis web server 2016
+  update.
+\newblock \emph{Nucleic Acids Research}, 44\penalty0 (W1):\penalty0 W90--W97,
+  2016.
+
+\bibitem[Laclau et~al.(2017)Laclau, Redko, Matei, Bennani, and
+  Brault]{Laclau17}
+C.~Laclau, I.~Redko, B.~Matei, Y.~Bennani, and V.~Brault.
+\newblock {Co-clustering through Optimal Transport}.
+\newblock In \emph{{34th International Conference on Machine Learning}},
+  volume~70, pages 1955--1964, Sydney, Australia, Aug. 2017.
+
+\bibitem[Langfelder et~al.(2016)Langfelder, Cantle, Chatzopoulou, Wang, Gao,
+  Al-Ramahi, Lu, Ramos, Merz, Zhao, Deverasetty, Tebbe, Schaab, Lavery,
+  Howland, Kwak, Botas, Aaronson, Rosinski, and Yang]{Langfelder2016}
+P.~Langfelder, J.~Cantle, D.~Chatzopoulou, N.~Wang, F.~Gao, I.~Al-Ramahi,
+  X.~Lu, E.~Ramos, K.~Merz, Y.~Zhao, S.~Deverasetty, A.~Tebbe, C.~Schaab,
+  D.~Lavery, D.~Howland, S.~Kwak, J.~Botas, J.~Aaronson, J.~Rosinski, and
+  X.~Yang.
+\newblock Integrated genomics and proteomics define {H}untingtin
+  {CAG}length–dependent networks in mice.
+\newblock \emph{Nature Neuroscience}, 19:\penalty0 622--633, 02 2016.
+
+\bibitem[Langfelder et~al.(2018)Langfelder, Gao, Wang, Howland, Kwak, Vogt,
+  Aaronson, Rosinski, Coppola, Horvath, and Yang]{Langfelder2018}
+P.~Langfelder, F.~Gao, N.~Wang, D.~Howland, S.~Kwak, T.~Vogt, J.~Aaronson,
+  J.~Rosinski, G.~Coppola, S.~Horvath, and X.~Yang.
+\newblock Micro{RNA} signatures of endogenous {H}untingtin {CAG} repeat
+  expansion in mice.
+\newblock \emph{PloS One}, 13\penalty0 (1), 2018.
+
+\bibitem[Lavancier et~al.(2015)Lavancier, Møller, and Rubak]{Lavancier2015}
+F.~Lavancier, J.~Møller, and E.~Rubak.
+\newblock Determinantal point process models and statistical inference.
+\newblock \emph{J. R. Stat. Soc. Ser. B. Stat. Methodol.}, 77\penalty0
+  (4):\penalty0 853--877, 2015.
+
+\bibitem[Lewis et~al.(2005)Lewis, Burge, and Bartel]{LEWIS2005}
+B.~P. Lewis, C.~B. Burge, and D.~P. Bartel.
+\newblock {Conserved seed pairing, often flanked by adenosines, indicates that
+  thousands of human genes are microRNA targets}.
+\newblock \emph{Cell}, 120\penalty0 (1):\penalty0 15--20, 2005.
+
+\bibitem[Lloyd(1982)]{Lloyd1982}
+S.~P. Lloyd.
+\newblock Least squares quantization in {PCM}.
+\newblock \emph{IEEE Transactions on Information Theory}, 28:\penalty0
+  129--137, 1982.
+
+\bibitem[Maniatis et~al.(2019)Maniatis, {\"A}ij{\"o}, Vickovic, Braine, Kang,
+  Mollbrink, Fagegaltier, Andrusivov{\'a}, Saarenp{\"a}{\"a}, Saiz-Castro,
+  Cuevas, Watters, Lundeberg, Bonneau, and Phatnani]{Maniatis89}
+S.~Maniatis, T.~{\"A}ij{\"o}, S.~Vickovic, C.~Braine, K.~Kang, A.~Mollbrink,
+  D.~Fagegaltier, {\v Z}.~Andrusivov{\'a}, S.~Saarenp{\"a}{\"a},
+  G.~Saiz-Castro, M.~Cuevas, A.~Watters, J.~Lundeberg, R.~Bonneau, and
+  H.~Phatnani.
+\newblock Spatiotemporal dynamics of molecular pathology in amyotrophic lateral
+  sclerosis.
+\newblock \emph{Science}, 364\penalty0 (6435):\penalty0 89--93, 2019.
+
+\bibitem[M{\'e}gret et~al.(2020)M{\'e}gret, Sasidharan~Nair, Dancourt,
+  Aaronson, Rosinski, and Neri]{megret:inserm-02512089}
+L.~M{\'e}gret, S.~Sasidharan~Nair, J.~Dancourt, J.~Aaronson, J.~Rosinski, and
+  C.~Neri.
+\newblock {Combining feature selection and shape analysis uncovers precise
+  rules for miRNA regulation in Huntington's disease mice}.
+\newblock \emph{{BMC Bioinformatics}}, 21\penalty0 (1):\penalty0 75, 2020.
+
+\bibitem[Monge(1781)]{monge1781}
+G.~Monge.
+\newblock \emph{M{\'e}moire sur la th{\'e}orie des d{\'e}blais et des
+  remblais}.
+\newblock {Histoire de l'Académie Royale des Sciences}, 1781.
+
+\bibitem[Nazarov and Kreis(2021)]{NK2021}
+P.~V. Nazarov and S.~Kreis.
+\newblock Integrative approaches for analysis of m{RNA} and micro{RNA}
+  high-throughput data.
+\newblock \emph{Computational and Structural Biotechnology Journal},
+  19:\penalty0 1154--1162, 2021.
+
+\bibitem[Ochs et~al.(2015)Ochs, Brox, and Pock]{iPiano}
+P.~Ochs, T.~Brox, and T.~Pock.
+\newblock i{P}iano: inertial proximal algorithm for strongly convex
+  optimization.
+\newblock \emph{J. Math. Imaging Vision}, 53\penalty0 (2):\penalty0 171--181,
+  2015.
+
+\bibitem[Olmo et~al.(2021)Olmo, Olmo, Gon{\c{c}}alves, Pires, Marques, and
+  Ribeiro]{PMID33906482}
+I.~G. Olmo, R.~P. Olmo, A.~N.~A. Gon{\c{c}}alves, R.~G.~W. Pires, J.~T.
+  Marques, and F.~M. Ribeiro.
+\newblock High-throughput sequencing of {BACHD} mice reveals upregulation of
+  neuroprotective mi{RNA}s at the pre-symptomatic stage of {H}untington's
+  disease.
+\newblock \emph{ASN Neuro}, 13:\penalty0 17590914211009857, 2021.
+
+\bibitem[Petry et~al.(2022)Petry, Keraudren, Nateghi, Loiselle, Pircs,
+  Jakobsson, Sephton, Langlois, St-Amour, and H{\'e}bert]{PMID35869509}
+S.~Petry, R.~Keraudren, B.~Nateghi, A.~Loiselle, K.~Pircs, J.~Jakobsson,
+  C.~Sephton, M.~Langlois, I.~St-Amour, and S.~S. H{\'e}bert.
+\newblock Widespread alterations in micro{RNA} biogenesis in human
+  {H}untington's disease putamen.
+\newblock \emph{Acta Neuropathologica Communications}, 10\penalty0
+  (1):\penalty0 1--11, 2022.
+
+\bibitem[Peyr{\'e} and Cuturi(2019)]{COT19}
+G.~Peyr{\'e} and M.~Cuturi.
+\newblock \emph{Computational Optimal Transport: With Applications to Data
+  Science}.
+\newblock Foundations and Trends in Machine Learning Series. Now Publishers,
+  2019.
+
+\bibitem[Peyr{\'e} et~al.(2016)Peyr{\'e}, Cuturi, and
+  Solomon]{peyre:hal-01322992}
+G.~Peyr{\'e}, M.~Cuturi, and J.~Solomon.
+\newblock {Gromov-Wasserstein Averaging of Kernel and Distance Matrices}.
+\newblock In \emph{{ICML 2016}}, Proc. 33rd International Conference on Machine
+  Learning, New-York, United States, June 2016.
+
+\bibitem[Peyré and Cuturi(2020)]{peyre2020computational}
+G.~Peyré and M.~Cuturi.
+\newblock Computational optimal transport, 2020.
+
+\bibitem[Polley et~al.(2021)Polley, LeDell, Kennedy, and {van der
+  Laan}]{SuperLearner}
+E.~Polley, E.~LeDell, C.~Kennedy, and M.~J. {van der Laan}.
+\newblock \emph{SuperLearner: Super Learner Prediction}, 2021.
+\newblock URL \url{https://CRAN.R-project.org/package=SuperLearner}.
+\newblock R package version 2.0-28.
+
+\bibitem[Polley et~al.(2011)Polley, Rose, and van~der Laan]{SLchapter}
+E.~C. Polley, S.~Rose, and M.~J. van~der Laan.
+\newblock Super learning.
+\newblock In \emph{Targeted learning}, Springer Ser. Statist., pages 43--66.
+  Springer, New York, 2011.
+
+\bibitem[Pontes et~al.(2015)Pontes, Giráldez, and Aguilar-Ruiz]{PONTES2015163}
+B.~Pontes, R.~Giráldez, and J.~S. Aguilar-Ruiz.
+\newblock Biclustering on expression data: A review.
+\newblock \emph{Journal of Biomedical Informatics}, 57:\penalty0 163--180,
+  2015.
+
+\bibitem[{R Core Team}(2022)]{R}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2022.
+\newblock URL \url{https://www.R-project.org/}.
+
+\bibitem[Rockafellar and Wets(1998)]{RockWets98}
+R.~T. Rockafellar and R.~J.-B. Wets.
+\newblock \emph{Variational analysis}, volume 317 of \emph{Grundlehren der
+  mathematischen Wissenschaften [Fundamental Principles of Mathematical
+  Sciences]}.
+\newblock Springer-Verlag, Berlin, 1998.
+
+\bibitem[Rutnam et~al.(2013)Rutnam, Wight, and Yang]{PMID23159731}
+Z.~J. Rutnam, T.~N. Wight, and B.~B. Yang.
+\newblock mi{RNA}s regulate expression and function of extracellular matrix
+  molecules.
+\newblock \emph{Matrix Biology}, 32\penalty0 (2):\penalty0 74--85, 2013.
+
+\bibitem[Therneau and Atkinson(2019)]{rpart}
+T.~Therneau and B.~Atkinson.
+\newblock \emph{rpart: Recursive Partitioning and Regression Trees}, 2019.
+\newblock URL \url{https://CRAN.R-project.org/package=rpart}.
+\newblock R package version 4.1-15.
+
+\bibitem[van~der Laan et~al.(2007)van~der Laan, Polley, and Hubbard]{SL2007}
+M.~J. van~der Laan, E.~C. Polley, and A.~E. Hubbard.
+\newblock Super learner.
+\newblock \emph{Stat. Appl. Genet. Mol. Biol.}, 6:\penalty0 Art. 25, 23, 2007.
+
+\bibitem[Wilkie(1996)]{Wilkie96modelcompleteness}
+A.~J. Wilkie.
+\newblock Model completeness results for expansions of the ordered field of
+  real numbers by restricted {P}faffian functions and the exponential function.
+\newblock \emph{J. Amer. Math. Soc}, 9:\penalty0 1051--1094, 1996.
+
+\bibitem[Wright and Ziegler(2017)]{ranger}
+M.~N. Wright and A.~Ziegler.
+\newblock {ranger}: A fast implementation of random forests for high
+  dimensional data in {C++} and {R}.
+\newblock \emph{Journal of Statistical Software}, 77\penalty0 (1):\penalty0
+  1--17, 2017.
+\newblock \doi{10.18637/jss.v077.i01}.
+
+\bibitem[Xie et~al.(2021)Xie, Bailey, Kuleshov, Clarke, Evangelista, Jenkins,
+  and Lachmann]{xie2021357}
+Z.~Xie, A.~Bailey, M.~Kuleshov, D.~Clarke, J.~Evangelista, S.~Jenkins, and
+  A.~Lachmann.
+\newblock Gene set knowledge discovery with {E}nrichr.
+\newblock \emph{Current Protocols}, 1\penalty0 (3):\penalty0 e90, 2021.
+
+\bibitem[Zhao et~al.(2019)Zhao, Wang, Dong, Sun, and Li]{ZWDSL19}
+J.~Zhao, H.~Wang, L.~Dong, S.~Sun, and L.~Li.
+\newblock mi{RNA}-20b inhibits cerebral ischemia-induced inflammation through
+  targeting {NLRP3}.
+\newblock \emph{Int. J. Mol. Med.}, 43\penalty0 (3):\penalty0 1167--1178, 2019.
+
+\end{thebibliography}

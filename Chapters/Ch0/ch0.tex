@@ -1,0 +1,285 @@
+This thesis presents the applications of optimal transport (OT) theory along with statistics in real-world problems therefore we dedicate this chapter to provide a concise but self-contained introduction to OT and to state all the notions upon which the rest of the thesis will use. In Section~\ref{chap0:sec:ot}, we first describes in short the basics of optimal transport by introducing  the related notions of assignment and Monge problem then its generalization, namely Kantorovich problem. After that, we focus on the theoretical and numerical result of the regularized OT that has several important advantages. We finally present a family of divergences, so-called Sinkhorn divergences,  interpolating between regularized OT and Maximum Mean Discrepancy (MMD) losses. In Section... $\clubsuit$ continue here $\clubsuit$
+\section{Optimal transport }
+\label{chap0:sec:ot}
+%OT provides the powerful tool to compare the probability distributions in a geometrically faithful way therefore it has found many applications in machine learning and other fields.
+% OT was first stated by the French mathematician Gaspard Monge~\cite{monge1781}:  A worker must find the way to move a large pile of sand lying on a construction site with minimal effort. This problem remained unsolved for over 200 years until progress was made  in the 1940s by the Soviet mathematician and economist Kantorovich. 
+
+
+
+
+\subsection{Assignment and Monge problem}
+\label{subsec:Monge}
+
+
+\paragraph{Optimal assignment problem}
+Fix two integers $M, N \geq 1$, we denote two datasets by $\bx := \{x_1, \ldots, x_M \} \subset \calX$ and $\by := \{ y_1, \ldots, y_N \} \subset \calY$ where $\calX, \calY$ are the metric spaces.  Let $\llbracket M \rrbracket :=\{1, \ldots , M \}$ be the set of all positive integers up to $M$,  we consider a cost matrix $C(\bx,\by) \in  \bbR _{+}^{M \times N}$ where $(C(\bx,\by))_{m, n}$ represents the cost of moving a unit of mass from $x_m$ to $y_n$.  Assuming $M=N$, the optimal assignment problem consists of finding a bijective $\sigma: \llbracket M \rrbracket \rightarrow \llbracket M \rrbracket$ such that the total cost $\sum_{m \in \llbracket M \rrbracket} (C(\bx,\by))_{m, \sigma(m)} $ is minimized. A native solution is to evaluate the total cost of $M!$ permutations of $M$ elements. However, $M!$ is huge even for small $M$ so this  may be very inefficient. In fact, there are several acceptable algorithms in time polynomial of the number of points $M$, see in~\cite[Section 3.7]{COT19}. 
+\paragraph{Monge problem}
+A generalization of optimal assignment problem, known as Monge problem, was introduced by the French mathematician Gaspard Monge in~\cite{monge1781} as follow:  a worker must find the ``best'' way to transport a certain of soil from the ground to places where it should be use in a construction. Assume that the source and target places are known and the transportation cost to move a unit of mass between two points is as well. The goal is to determine the destination to which a source point should be transported so that the total cost is minimal. This problem can be stated equivalently as follows. Denote $\Omega_{d}  := \{ a \in (\bbR_+)^d | \sum_{i \in \lb d \rb} a_i = 1\}$  the $(d-1)-$dimensional simplex.  For any $(a, b) \in \Omega_M \times \Omega_N$,  let $\alpha := \sum_{m\in \llbracket M \rrbracket} a_m \delta_{x_m}$, $\beta := \sum_{n\in \llbracket N \rrbracket} b_n \delta_{y_n}$ be two weighted empirical measure attached to $\bx$ and $\by$. Given a cost function $c: \calX \times \calY \rightarrow \bbR_{+}$ defined the transportation cost to move a unit of mass from $x_m$ to $y_n$, the Monge problem consists in solving 
+\begin{equation}
+\label{chap0:eq:eq0}
+\min_{T\in \mathcal{T}} \sum_{m \in \llbracket M \rrbracket}  c(x_m, T(x_m)),
+\end{equation}
+where $\mathcal{T} := \{ T : \bx \rightarrow \by |  b_n = \sum_{m: T(x_m) = y_n} a_m \}$, so-called the feasible set,  is the set of all mappings that associates each point $x_m$ to a single point $y_n$ and the mass conservation constraints are meet. Note that the mapping $T$ between two finite sets can be represented in a straightforward way by an assignment $\sigma: \llbracket M \rrbracket \rightarrow \llbracket N \rrbracket$ where $\sigma(m) = n$ iff $T(x_m) = y_n$ and the constraints are equivalent to $\sum_{m \in \sigma^{-1}(n)} a_m = b_n$. 
+When $M=N$ and two measures are uniform, i.e. $\alpha := \tfrac{1}{M} \sum_{m \in \llbracket M \rrbracket} \delta_{x_m}, \beta:= \tfrac{1}{M} \sum_{n \in \llbracket M \rrbracket} \delta_{y_n}$, then the conservation constraints induces that $T$ is a bijection, such that $T(x_m) = y_{\sigma(n)}$ and the Monge problem corresponds to the optimal assignment problem with the cost matrix $C_{m, n} = c(x_m, y_n)$. Note that the set $\mathcal{T}$ may be empty if the two measures $\alpha$ and $\beta$ are incompatible, for example $M<N$ or $\sum_{m \in \llbracket M \rrbracket} a_m \neq \sum_{n \in \llbracket N \rrbracket} b_n$ so the Monge problem may not have solution. In case of the existence of solution, it is very difficult and costly to solve this problem. 
+
+\subsection{Kantorovich relaxation}
+\label{subsec:Kantorovich}
+The assignment problem is a special case of Monge problem when two measures are uniform attached to two sets of the same size. Monge problem allows to consider two arbitrary measures and to assign several source points to a target point. However, both problems are hard to solve in practice.\\
+Much later Loenid Vitaliyevich Kantorovich, a Russian mathematician, rediscovered the Monge problem motivated of economic problem. Kantorovich~\cite{Kan42} proposed an excellent idea that allow to split the mass of each source point and move them to several target points. Therefore, Kantorovich formulation consists in solving, in place of a map $T$, a probabilistic matrix $P$ where $P_{mn}$ describes the amount of mass moved from $x_m$ to $y_n$. This coupling matrix should be satisfied the mass conservation constraints, i. e., the sums of row and column should be equals to $a$ and $b$, respectively.  Formally, the set of admissible couplings is defined by
+\begin{equation*}
+\Pi(a, b) := \{ P \in (\bbR_+)^{M \times N}| P\mathbf{1}_N = a, P^\top \mathbf{1}_M = b  \}.
+\end{equation*}
+In fact,  $\Pi(a, b)$ can be expressed as the set of the joint probability matrix over $(\bx, \by)$ with marginal distributions $w$ and $w'$, respectively. Obviously, this set contains $a \times b$ so is nonempty.  Another benefit  is the symmetric property  in the sense that $P$ is an element of $\Pi(a, b)$ if and only if $P^{\top}$ is an element of  $\Pi(b, a)$ as well. Given a cost matrix $C(\bx, \by) \in (\bbR_{+})^{M\times N}$, where $\left(C(\bx,\by)\right)_{mn} = c(x_m, y_n)$, Kantorovich formulation consists in solving
+\begin{equation}
+\label{chap0:eq:eq1}
+\OT_{c}(\alpha, \beta) := \min_{P \in \Pi(a, b)} \langle C(\bx, \by), P \rangle_F,
+\end{equation}
+where $\langle C(\bx, \by), P \rangle_F := \sum_{(m, n) \in \llbracket M \rrbracket \times \llbracket N \rrbracket} \left(C(\bx, \by) \right)_{mn} P_{mn}$ is the $P$-specific expected cost of transport from $\bx$ to $\by$. In many cases, the notation $\OT_{c}(\alpha, \beta)$ is useful to indicate explicitly the dependence on the cost function $c$  defined the cost matrix $C(\bx,\by)$.
+
+We generalize the definition~\eqref{chap0:eq:eq1} of $\OT_{c}$ between arbitrary measures by first introducing some useful notations of functions and probability measures.  Let $\calP(\calX)$ be the set of probability measures over $\calX$. Given a continuous map $f: \calX \rightarrow \calY$ we denote  $f_{\sharp}: \calP(\calX) \rightarrow \calP(\calY)$ its associated push-forward operator, i.e.,   the push-forward measure $\beta = f_{\sharp}(\alpha)$  of $\alpha \in \calP(\calX)$ satisfies
+\begin{equation*}
+\int_{\calY} h(y)d\beta(y) = \int_{\calX} h(f(x)) d\alpha(x), \quad \forall h \in  \calC(\calY),
+\end{equation*}
+where $\calC(\calY)$ is the space of continuous and smooth functions over $\calY$. In the general case, we consider the joint probability distribution $P$  over the product space $\calX \times \calY$ instead of the probability matrix, but that should be satisfy the mass conservation constraints.
+The set of admissible couplings can be defined
+\begin{equation*}
+\Pi(\alpha, \beta) :=\{ P \in \calP(\calX, \calY)| \pi_{X \sharp} (P) = \alpha, \pi_{Y\sharp}(P) = \beta \},
+\end{equation*}
+where $\pi_{\calX \sharp}$ and $\pi_{\calY \sharp}$ are the push-forward operators of the projections $\pi_{\calX}(x,y) = x$ and $\pi_{\calY}(x,y) = y$, respectively. So the Kantorovich problem in general case is 
+\begin{equation}
+\OT_{c}(\alpha, \beta) := \min_{P \in \Pi(\alpha, \beta)} \int_{\calX \times \calY} c(x,y) dP(x,y)
+\end{equation}
+This infinite-dimensional linear optimization over a space of measures have a solution under mild assumptions, for example $(\calX, \calY)$ are compact spaces and the cost function $c$ is continuous.  Furthermore the OT loss can be rewritten as the expectation of  $c(X,Y)$  
+\begin{equation}
+\OT_{c}(\alpha, \beta) = \min_{(X,Y)} \{ \mathbb{E}_{X, Y} (c(X,Y)): X \sim \alpha, Y \sim \beta \},
+\end{equation}
+where $(X, Y)$ is a couple of random variables with the joint law $P \in \Pi(\alpha, \beta)$ and the marginal laws  $\alpha$ and $\beta$, respectively.
+\paragraph{Optimal transport loss as the distance} 
+One of advantage of OT theory is that the OT cost from one to other measure can be seen as the distance if the cost function is chosen as the distance function. Indeed, whenever $\calX$ is equipped with a metric $d_{\calX}$, it is natural to use it as cost function, i.e., $c(x,y) = d_{\calX}(x,y)^p$, with $p\geq 1$. In such case, the OT cost in Equation~\eqref{chap0:eq:eq1} is called the p-Wasserstein distance, which we denote as $\calW_p(\alpha, \beta) :=  \OT_{d_{\calX}^p}(\alpha, \beta)$. The case $p=1$ is also known as the Kantorovich-Tubinstein in statistics or the Earth Mover's Distance in computer vision. The Proposition below shows that these are indeed proper distances. 
+
+\begin{proposition}
+Assume $\calX = \calY$, and suppose $(\calX, d)$ is a metric space and that $(\alpha, \beta) \in $
+\end{proposition}
+
+
+
+\subsection{Entropic regularization}
+\label{subsec:entropic}
+
+
+The high computational cost of solving the Kantorovich problem has led to various schemes to solve it approximately. One of the most popular such approaches is to add an entropy regularization term to the objective~\cite{Cuturi13}.
+
+For this we define the discrete entropy of a coupling as: 
+\begin{equation*}
+E(P) :=  -  \sum_{(m,n)   \in  \llbracket  M\rrbracket   \times  \llbracket
+  N\rrbracket} P_{mn} (\log P_{mn}  -1)
+\end{equation*}
+and use it to obtain a regularized version of problem \eqref{chap0:eq:eq1} as follows
+\begin{equation}
+  \label{chap0:eq:eq2}
+  \OT_{C}^{\gamma}(a, b) = \min_{P \in \Pi(a, b)}
+  \left\{\langle C_{X,Y}, P \rangle_F - \gamma E(P)\right\}.  
+\end{equation}
+
+\begin{lemma}
+\label{chap0:lem:lem1} Prove that the solution $\bar{P}$ of problem
+$\min_{P \in \Pi(a, b)} - E(P) $
+is $a \otimes b$. 
+\end{lemma}
+\begin{proof}
+Applying the Lagrange multiplier method yields
+\begin{equation*}
+\mathcal{L} (P, \mathbf{f}, \mathbf{g})  = -E(P) - \langle \mathbf{f}, P\mathbf{1}_M - a \rangle -\langle \mathbf{g}, P^{\top} \mathbf{1}_{N} -b \rangle. 
+\end{equation*}
+We compute the gradient
+\begin{equation*}
+\frac{\partial \mathcal{L}(P, \mathbf{f}, \mathbf{g}) }{\partial P_{m,n}} = \log(P_{m,n}) - \mathbf{f}_m - \mathbf{g}_n, \forall (m,n) \in \llbracket M \rrbracket \times \llbracket N \rrbracket
+\end{equation*}
+Therefore $\bar{P}_{m,n} = \e^{\mathbf{f}_m} \e^{\mathbf{g}_n}$. By substituting into the constraints $\bar{P} \mathbf{1}_M =a$ and $\bar{P}{\top} \mathbf{1}_N = b$, we obtain
+\begin{equation*}
+\e^{\mathbf{g}_n} \sum_{m \in \llbracket M \rrbracket} \e^{\mathbf{f}_m} = b_n, \quad \e^{\mathbf{f}_m} \sum_{n \in \llbracket N \rrbracket} \e^{\mathbf{g}_n} = a_m.
+\end{equation*}
+Furthermore, we have $\sum_{m \in \llbracket M \rrbracket} \e^{\mathbf{f}_m} \sum_{n \in \llbracket N \rrbracket} \e^{\mathbf{g}_n} = 1$, hence $\bar{P}_{m,n} =\e^{\mathbf{f}_m} \e^{\mathbf{g}_n} = a_m b_n$. This concludes the proof.
+\end{proof}
+
+
+
+
+\begin{proposition}
+(adapted from ~\cite{COT19}). The solution $P_{\gamma}$ of  \eqref{chap0:eq:eq2} converges to the optimal solution with maximal entropy within the set of all optimal solutions of the Kantorovich problem, namely
+\begin{equation}
+\label{chap0:eq:eq3}
+P_{\gamma} \xrightarrow{\gamma \rightarrow 0} \argmin_{P} \{  -E(P): P \in \Pi(a, b), \langle C_{X,Y}, P \rangle_F = \OT_c(a, b)\}
+\end{equation}
+so that in particular
+\begin{equation*}
+\OT^{\gamma}_c(a, b) \xrightarrow{\gamma \rightarrow 0} \OT_c(a, b)
+\end{equation*}
+One also has
+\begin{equation*}
+P_{\gamma} \xrightarrow{\gamma \rightarrow \infty} a \otimes b =a (b)^{\top} = (a_m b_{n})_{m,n}
+\end{equation*}
+\end{proposition}
+\begin{proof}
+We consider a sequence $(\gamma_\ell)$ such that $\gamma_{\ell} \rightarrow 0$ and $\gamma_\ell >0$. We denote $P_\ell$ the solution of \eqref{chap0:eq:eq2} for $\gamma =\gamma_\ell$. Since $\Pi(a, b)$ is bounded, we can extract a sequence (that we do not relabel for the sake of simplicity) such that $P_\gamma \rightarrow P^{\star}$. Since $\Pi(a, b)$ is closed, $P_{\star} \in \Pi(a, b)$. We consider any $P$ such that $\langle C, P \rangle_F = \OT_{C} (a, b)$. By optimality of $P$ and $P_{\ell}$ for their respective optimization problems (for $\gamma =0$ and $\gamma = \gamma_{\ell}$, one has 
+\begin{equation}
+\label{chap0:eq:eq4}
+0 \leq \langle C, P_\ell \rangle  -\langle C, P \rangle \leq \gamma_\ell \left( E(P_\ell) -E(P) \right).
+\end{equation} 
+Since $E$ is continuous, taking the limit $\ell \rightarrow +\infty$ in this expression show that $\langle C, P^{\star} \rangle = \langle C, P \rangle$ so that $P^{\star}$ is a feasible point of \eqref{chap0:eq:eq3}. Furthermore, dividing by $\gamma_\ell$ in \eqref{chap0:eq:eq4} and taking the limit shows that $E(P) \leq  E(P^{\star})$, which shows that $P^{\star}$ is a solution of  \eqref{chap0:eq:eq4}. Since the solution $P^{\star}_{0}$ to this program is unique by strict convexity of $-E$, one has $P^\star = π^\star_0$, and the whole sequence is converging. 
+
+Similarly, considering a sequence $(\bar{\gamma}_k)$ such that $\bar{\gamma}_k \rightarrow +\infty$, we denote $\bar{P}_k$ the solution of \eqref{chap0:eq:eq3} for $\gamma = \bar{\gamma}_k$, then $\bar{P}_k \rightarrow \bar{P}_{\infty} $ with  $\bar{P}_\infty \in \Pi(a, b)$. Furthermore, we have the inequality 
+\begin{equation*}
+0 \leq E(\bar{P}) - E(\bar{P}_k) \leq \frac{1}{\bar{\gamma}_k} \left( \langle C, \bar{P} \rangle  - \langle C, \bar{P}_k \rangle \right)
+\end{equation*}
+Taking the limit $k\rightarrow +\infty$ in this expression shows that $E(\bar{P}) = E(\bar{P}_\infty)$. By the Lemma~\ref{chap0:lem:lem1}, we imply that $\bar{P}_\infty = \bar{P} = a \otimes b$, hence this finishes the proof.
+\end{proof}
+Besides computational advantages, regularizing the OT problem often leads to better empirical performance in applications where having denser correspondences is beneficial, e.g, when the support points correspond to noisy features.
+
+The regularized version of discrete optimal transport \eqref{chap0:eq:eq2} is a strictly convex optimization problem. Below we show that its solution has a simple analytic expression
+\begin{proposition}\label{prop:01}(adapted from~\cite{COT19}.)
+
+The solution to \eqref{chap0:eq:eq2} is unique and has the form 
+\begin{equation}
+\label{chap0:eq:OT_form}
+P^{\star} =\diag(u) K \diag(v) 
+\end{equation}
+where $K = \e^{-\frac{C}{\gamma}}$ is Gibbs kernel associated to the cost matrix $C$ and $u \in (\bbR_{+}^{*})^M, v \in (\bbR_{+}^{*})^{N}$ are two (unknown) scaling variables.
+\end{proposition}
+\begin{proof}
+The Lagrangian with respect to  \eqref{chap0:eq:eq2} is 
+\begin{equation*}
+\mathcal{L}(P , \mathbf{f}, \mathbf{g}) := \langle P, C \rangle -\gamma E(P) - \langle \mathbf{f}, P \mathbf{1}_N -a \rangle - \langle \mathbf{g}, P^{\top} \mathbf{1}_M - b\rangle,
+\end{equation*}
+where $\mathbf{f} \in \mathbb{R}^M_{+}$ and $\mathbf{g} \in \mathbb{R}^N_{+}$. Now, let us calculate the gradient
+\begin{equation*}
+\frac{\partial \mathcal{L}(P, \mathbf{f}, \mathbf{g})}{ \partial P_{m,n}} = C_{m, n} + \gamma \log(P_{m,n})-  (\mathbf{f}_m +\mathbf{g}_n),
+\end{equation*}
+and set it equal $0$, we imply that $P_{m,n} = \e^{\mathbf{f}_m/\gamma} \e^{-C_{m,n}/\gamma} \e^{\mathbf{g}_n/\gamma}$. Therefore, we obtain the optimal solution as \eqref{chap0:eq:OT_form} by using the notation $u = (\e^{\mathbf{f}_m})_{m \in \lb M \rb}$ and $v = (\e^{\mathbf{g}_n})_{n \in \lb N \rb}$.
+\end{proof}
+The factorization of the OT matrix $P^{\star}$ allows us to solve that problem easily by finding two nonnegative vectors $(u,v)$. The two conservation constraints can be expressed as the following equations
+\begin{equation*}
+  \diag(u) K \diag(v)
+  \Ind_{N}
+  =a     \quad \text{and }
+  \diag(v)    K^{\top}    \diag(v)
+  \Ind_{M}
+  = b.
+\end{equation*}
+Since $\diag(v) \Ind_{M} = v$ and $\diag(u) \Ind_{N} = u$, we simplify that equations into equivalent form
+\begin{equation}
+\label{chap0:eq:OT_solve}
+u \odot (Kv) = a \quad \text{ and } v \odot K^{\top} u = b
+\end{equation}
+where $\odot$ denotes the component-wise multiplication of vectors. This problem, so-called the classical matrix scaling problem, can be solved through an iterative method which alternately normalizes $u$ and  $v$ to satisfy the right-hand side and right-hand side of Equation~\eqref{chap0:eq:OT_solve}. More specifically, initialized with any positive vector $v^{(0)}= \mathbf{1}_N$, we implement two updates in each iteration of procedure known as  Sinkhorn's algorithm
+\begin{equation*}
+u^{(\ell +1)} := \frac{a}{K v^{(\ell)}} \quad \text{ and }  v^{(\ell +1)} := \frac{b}{K^{\top} u^{(\ell +1)}}
+\end{equation*}
+where the division operator between two vectors is to be understood element-wise. Now we present an elementary proof of linear convergence of the iterations by using the Hilbert projective metric on $(\bbR_{+}^{*})^{d}$.
+
+%For  self-containedness,  let  us   recall  several  definitions  and  results
+%concerning  matrix norms.   For  any  matrix $A  \in  \bbR^{d\times d'}$,  the
+%Frobenius     and     maximum     norms     of    $A$     are     given     by
+%$\|A\|_F :=  \left(\sum_{i \in  \lb d \rb,  j \in  \lb d'
+%    \rb}                   A_{i,j}^2\right)^{1/2}$                  and
+%$\|A\|_{\max}  := \max  \{|A_{i,j}| :  i \in  \lb d  \rb, j  \in
+%\lb d'  \rb\} $.  For any  vector $x \in \bbR^d$,  the variation
+%seminorm           of           $x$          is           defined           as
+%$\|x\|_{\var} := \max \{x_{i} : i\in \lb d \rb \} - \min \{x_{i}
+%:  i \in  \lb d  \rb\}$.  We  will use  the following  classical
+%inequalities and equality:
+%\begin{align*}
+%  \forall  A\in  \bbR^{d \times  d'},  \forall  B  \in \bbR^{d'  \times  d''},
+%  \|AB\|_F \leq  \|A\|_F \|B\|_F;\\
+%  \forall A  \in \bbR^{d \times  d'}, \forall  x \in \bbR^{d'},  \|Ax\|_2 \leq
+%  \|A\|_F \|x\|_2;\\
+%  \forall x \in \bbR^{d}, \|\diag(x)\|_F = \|x\|_2;\\
+%  \forall x \in \bbR^{d}, \|x\|_{\var} \leq 2 \|x\|_{\infty};\\
+%  \forall x \in \{0\} \times \bbR^{d-1}, \|x\|_{\infty} \leq \|x\|_{\var}. 
+%\end{align*}
+
+\begin{definition}
+The Hilbert projective metric on $(\bbR_{+}^{*})^{d}$ is defined by
+\begin{equation*}
+  \forall x, x' \in  (\bbR_{+}^{*})^{d}, d_{\calH}
+  (x,x') :=  \log \max\left\{\tfrac{x_i x'_j}{x'_i  x_j} : i,j \in  \lb d
+    \rb\right\}.
+\end{equation*}
+\end{definition}
+We will use the following properties~\cite{Birkhoff}:
+\begin{gather}
+\label{chap0:prop1}
+  \forall x, x' \in (\bbR_{+}^{*})^{d}, d_{\calH} (x,x') = \| \log(x) -
+  \log(x') \|_{\var};\\
+  \label{chap0:prop2}
+  \forall x, x' \in (\bbR^{*}_{+})^{d}, d_{\calH}(x, x') = d_{\calH}(x/x',
+  \Ind_d) = d_{\calH}(\Ind_d/x', \Ind_d/x);\\
+  \label{chap0:prop3}
+  \forall K \in (\bbR_{+}^{*})^{d \times d'}, \forall x, x' \in
+  (\bbR^{*}_{+})^{d'}, d_{\calH}(Kx, Kx') \leq \lambda(K) d_{\calH}(x, x'),
+\end{gather}
+where  $\lambda(K) :=  \tfrac{\sqrt{\eta(K)} -1}{\sqrt{\eta(K)}+1}  < 1$  with
+$\eta(K) :=  \max\left\{\tfrac{K_{i,k} K_{j,\ell}}{K_{j,k} K_{i, \ell}}  : i,j
+  \in \lb d \rb, k,\ell \in \lb d' \rb\right\}$. 
+We have the following convergence theorem.
+\begin{theorem}
+One has $(u^{(\ell)}, v^{(\ell)})  \rightarrow (u^{\star}, v^{\star})$ and  
+\begin{equation}
+\label{chap0:eq:cv0}
+d_{\calH}(u^{(\ell)}, u^{\star}) =  O \big(\lambda(K)^{2 \ell}\big), \quad d_{\calH}(v^{(\ell)}, v^{\star}) = O\big(\lambda(K)^{2\ell} \big),
+\end{equation}
+where $u^{\star}, v^{\star}$ are the optimal solutions. Furthermore,
+\begin{align}
+\label{chap0:eq:cv1}
+d_{\calH}(u^{(\ell)}, u^{\star}) &\leq \frac{d_{\calH}\big(P^{(\ell)} \mathbf{1}_M, a \big)}{1 - \lambda(K)^2},\\
+\label{chap0:eq:cv2}
+d_{\calH}(v^{(\ell)}, v^{\star}) &\leq \frac{d_{\calH}\big((P^{(\ell)})^{\top} \mathbf{1}_N, b \big)}{1 - \lambda(K)^2},
+\end{align}
+where $P^{(\ell)} := \diag(u^{(\ell)}) K \diag(v^{(\ell)})$. Last, one has 
+\begin{equation}
+\label{chap0:eq:cv3}
+||\log(P^{(\ell)}) - \log(P^{\star}) ||_{\max} \leq d_{\calH}( u^{(\ell)}, u^{\star}) + d_{\calH}( v^{(\ell)}, v^{\star}),
+\end{equation}
+where $P^{\star}$ is the unique solution of \eqref{chap0:eq:eq2}
+\end{theorem}
+\begin{proof}
+Using~\eqref{chap0:prop2} and~\eqref{chap0:prop3}, we get 
+\begin{align}
+\notag
+d_{\calH}(u^{(\ell +1)}, u^{\star})&= d_{\calH} \left( \frac{a}{Kv^{(\ell)}}, \frac{a}{Kv^{\star}} \right) \\
+\label{chap0:eq:uu}
+&= d_{\calH}(Kv^{(\ell)}, Kv^{\star}) \leq \lambda(K) d_{\calH}(v^{(\ell)}, v^{\star}).
+\end{align}
+Likewise and the fact that $\lambda(K^{\top}) = \lambda(K)$, we get
+\begin{align}
+\notag
+d_{\calH}(v^{(\ell)}, v^{\star})&= d_{\calH} \left( \frac{b}{K^{\top}u^{(\ell)}}, \frac{b}{K^{\top}u^{\star}} \right) \\
+\notag
+&= d_{\calH}(K^{\top}u^{(\ell)}, K^{\top}u^{\star})\\
+\label{chap0:eq:vv}
+& \leq \lambda(K^{\top}) d_{\calH}(u^{(\ell)}, u^{\star}) = \lambda(K) d_{\calH}(u^{(\ell)}, u^{\star}).
+\end{align}
+The inequalities~\eqref{chap0:eq:uu} and~\eqref{chap0:eq:vv} imply that 
+\begin{equation*}
+d_{\calH}(u^{(\ell +1)}, u^{\star}) \leq (\lambda(K))^2 d_{\calH}(u^{(\ell)}, u^{\star}).
+\end{equation*}
+That is equivalent to the left-hand side of equation~\eqref{chap0:eq:cv0}, likewise to the right-hand side. By invoking in turn the triangle inequality and both~\eqref{chap0:prop2} and~\eqref{chap0:prop3}, we get
+\begin{align*}
+d_{\calH}(u^{(\ell)}, u^{\star})& \leq d_{\calH}(u^{(\ell +1)}, u^{(\ell)}) +  d_{\calH}(u^{(\ell+1)}, u^{\star})\\
+& \leq d_{\calH} \left( \frac{a}{Kv^{(\ell)}}, u^{(\ell)} \right) + \lambda(K)^2 d_{\calH}(u^{(\ell)}, u^{\star})\\
+&= d_{\calH} \left( a, u^{\ell} \odot (Kv^{(\ell)}) \right) + \lambda(K)^2 d_{\calH}(u^{(\ell)}, u^{\star}).
+\end{align*}
+The above inequality and the fact that $u^{\ell} \odot (Kv^{(\ell)}) = P^{(\ell)} \mathbf{1}_M$  imply~\eqref{chap0:eq:cv1}. Likewise \eqref{chap0:eq:cv2} can be proved in an analogous way. \eqref{chap0:eq:cv3} is trivial $\clubsuit$ check again $\clubsuit$.
+\end{proof}
+\subsection{Sinkhorn loss}
+\label{subsec:sinkhorn}
+%Used as a loss function, the regularized Wassestein distances has the undesirable property that
+%  $\calW_{\gamma}(a, a) \neq 0$ in addition to having biased sample gradients.
+%In response to this,  Sinkhorn loss is introduced that interpolate between Wassestein and Maximum Mean Discrepance losses in~\cite{Genevay18} :
+%\begin{equation*}
+%  \bar{\calW}_{\gamma}\left(\mu_X^{a},        \nu_Y^{b}       \right)        :=       2
+%  \calW_{\gamma}\left(\mu_X^{a},         \nu_Y^{b}          \right)         -
+%  \calW_{\gamma}\left(\mu_X^{a},      \mu_X^{a}       \right)      -
+%  \calW_{\gamma}\left(\nu_Y^{b}, \nu_Y^{b} \right). 
+%\end{equation*}
+

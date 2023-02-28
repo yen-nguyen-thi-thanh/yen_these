@@ -1,0 +1,226 @@
+%%%%
+%%
+%%
+%%  Utiliser pdflatex pagedegardetheseEDMH.tex
+%%
+%%
+%%%%
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+\usepackage{fullpage}
+
+\topmargin=-5mm
+\textwidth=150mm
+\oddsidemargin=0mm
+\textheight=250mm
+
+\AtBeginDocument{%
+  \setlength{\oddsidemargin}{\dimexpr(\paperwidth-\textwidth)/2-1in}%
+  \setlength{\evensidemargin}{\oddsidemargin}%
+  \setlength{\topmargin}{%
+    \dimexpr(\paperheight-\textheight)/2-\headheight-\headsep-1in}%
+}
+
+
+\begin{document}
+\thispagestyle{empty}
+\vspace{-2cm}
+
+\voffset-10pt
+
+
+%%%
+%% premiere ligne avec les logos
+%% (modifier les symboles % en début de lignes 
+%%  pour obtenir la configuration souhaitÃée)
+%%%
+\noindent
+\hbox{\includegraphics[width=4cm]{logo_udp.jpeg}} 
+\hfill
+%%%
+%% logo Etablissement inscripteur
+%%%
+%\hbox{\includegraphics[width=2.3cm]{logoCentraleSupelec.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoHEC.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoENSAE.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoENSCachan.jpg}}
+\hbox{\includegraphics[width=3cm]{logo_map5.png}}
+%\hbox{\includegraphics[width=1.9cm]{logoENSTA.jpg}}
+%\hbox{\includegraphics[width=2.1cm]{logopsudfacsciences2013.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoTelecom.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoEvry.jpg}}
+%\hbox{\includegraphics[width=2.2cm]{logoUVSQ.jpg}}
+%\hbox{\includegraphics[width=2.5cm]{logoX.jpg}}
+\hfill
+%%%
+%% logo Etablissement d'accueil, si différent du précédent
+%%%
+%\hbox{\includegraphics[width=2cm]{logoIHES.jpg}}
+%\hbox{\includegraphics[width=2.1cm]{logoinra.jpg}}
+%\hbox{\includegraphics[width=2.5cm]{logoAgro.jpg}}
+%\hbox{\includegraphics[width=1.5cm]{logoCEA.jpg}}
+\hfill
+%%%
+%% logo laboratoire(s) d'accueil, s'il existe
+%%%
+%\hbox{\includegraphics[width=2.5cm]{logoagro.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoCMAP.jpg}}
+%\hbox{\includegraphics[width=2.4cm]{logoCMLA.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoCMLS.jpg}}
+%\hbox{\includegraphics[width=4cm]{logoDMA.jpeg}}
+%\hbox{\includegraphics[width=2.2cm]{logoGREHEC.jpg}}
+%\hbox{\includegraphics[width=2.1cm]{logoIPhT.jpeg}}
+%\hbox{\includegraphics[width=2cm]{logoLAG.jpg}}
+%\hbox{\includegraphics[width=1.6cm]{logoLAMME.jpg}}
+%\hbox{\includegraphics[width=3cm]{logoLMO.jpg}}
+%\hbox{\includegraphics[width=3.4cm]{logoLMV.jpeg}}
+%\hbox{\includegraphics[width=2.7cm]{logoMaIAGE.png}}
+%\hbox{\includegraphics[width=2.5cm]{logoSAMOVAR.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoUMA.jpg}}
+
+\vspace{7mm}
+
+\begin{center}
+ {\large\sc Universit\'e de Paris}\\
+  \vspace*{0.2cm}
+\'Ecole doctorale de Sciences Math\'ematiques de Paris Centre   (ED 386)\\  
+ \vspace*{0.4cm} 
+%%%
+%% nom \'etablissement inscripteur
+%%%
+{\small \it Laboratoire :  Math\'ematiques Appliqu\'es \`a Paris 5, MAP5-UMR 8145 CNRS } 
+%    Centrale-Sup\'elec\\
+%    Ecole polytechnique\\
+\\
+%    Ecole normale sup\'erieure de Cachan\\
+%    \'Ecole nationale de la statistique et de l'administration \'economique\\
+%    \'Ecole nationale sup\'erieure de techniques avanc\'ees\\
+%    Ecole des hautes \'etudes commerciales de Paris\\
+%    Telecom SudParis\\
+%    Telecom ParisTech\\
+%    Universit\'e d'Evry-Val d'Essonne\\
+%    Universit\'e Paris-Sud\\
+%   Universit\'e de Versailles Saint-Quentin-en-Yvelines\\  
+ \vspace*{0.2cm} 
+%%%
+%% nom \'etablissement(s) d'accueil, si diff\'erent du pr\'ec\'edent
+%%%
+%{\small \it \'Etablissement d'accueil : }    
+%    AgroParisTech\\
+%    Commissariat \`a l'\'energie atomique et aux \'energies alternatives\\
+%    Institut des hautes \'etudes scientifiques\\
+%    Institut national de la recherche agronomique\\
+%\vspace*{0.2cm} 
+%%%
+%% nom laboratoire(s) d'accueil
+%%%
+%{\small \it Laboratoire d'accueil : }     
+%  Centre de math\'ematiques appliqu\'ees de Polytechnique, UMR 7641 CNRS\\
+%  Centre de math\'ematiques et de leurs applications, UMR 8536 CNRS\\
+%  Centre de math\'ematiques Laurent Schwartz, UMR 7640 CNRS\\
+%  D\'epartement de math\'ematiques et applications, UMR 8553 CNRS\\
+%  ENSAE-X Centre d'\'economie, statistique et sociologie, UMR 9194 CNRS\\
+%  F\'ed\'eration de Math\'ematiques, FR 3487 CNRS\\
+%  Groupement de recherche et d'\'etudes en gestion (GREGHEC), UMR 8071 CNRS\\
+%  Institut de physique th\'eorique de Saclay, URA 2306 CNRS\\
+%Laboratoire Alexander Grothendieck (ERL 9216 CNRS)\\
+%  Laboratoire de math\'ematiques d'Orsay, UMR 8628 CNRS\\
+%  Laboratoire de math\'ematiques de Versailles, UMR 8100 CNRS\\
+%  Laboratoire de math\'ematiques et mod\'elisation dâ€™\'Evry, UMR 8071 CNRS-INRA\\
+%  Laboratoire traitement et communication de l'information, UMR 5141 CNRS\\
+%  Math\'ematiques et informatique appliqu\'ees, UMR 518 INRA\\
+%  Math\'ematiques et informatique appliqu\'ees du g\'enome \`a l'environnement, UR 1404
+%  Services r\'epartis, architectures, mod\'elisation, validation, administration des r\'eseaux, UMR 5157 CNRS\\
+%  Unit\'e de math\'ematiques appliqu\'ees, ENSTA-CNRS-INRIA\\
+ % \vspace*{0.2cm}
+\end{center}
+
+\vspace{5mm}
+
+\begin{center}
+{\Large\bf TH\`ESE DE DOCTORAT }
+\end{center}
+
+\vspace{2mm}
+
+\begin{center}
+{\it Sp\'ecialit\'e : } 
+%%%
+%%  Choisir l'une des trois spÃ©cialitÃ©s suivantes (soumis Ã  
+%%  accord du comitÃ© de direction de l'EDMH)
+%%%
+{\large Math\'ematiques appliqu\'ees}
+%{\large Math\'ematiques appliqu\'ees}
+%{\large Math\'ematiques aux interfaces}
+\end{center}
+
+\vspace{5mm}
+
+\begin{center}
+par\\
+\vspace{3mm}
+{\large\bf Thi Thanh Yen NGUYEN}
+\end{center}
+
+\vspace{3mm}
+ 
+\shorthandoff{:} 
+\begin{center}
+{\Large Mathematical, data-driven modeling of the dynamics of brain vulnerability and senescence in neurodegenerative diseases.}
+%%%
+%% éventuellemnt sur deux lignes
+%%%
+\end{center}
+\shorthandon{:} 
+
+
+\vspace{10mm}
+
+\noindent{\small \it Date de soutenance~: } Jour Mois Ann\'ee
+
+\vspace{5mm}
+
+\noindent
+{\small \it Apr\`es avis des rapporteurs~: }
+\begin{tabular}{l} {\sc Pr\'enom NOM} (Institution)\vspace{1mm}  \\
+{\sc  Pr\'enom NOM} (Institution)\\
+\end{tabular}
+
+\vspace{8mm}
+
+\noindent
+{\small \it Jury de soutenance~: }
+%%%
+%% par ordre alphabétique des membres
+%%
+%% version avant soutenance à adapter (un jury peut contenir 
+%% tout ou partie des rapporteurs, tout au partie des codirecteurs de thèses,
+%% voire des invités). Le président du jury est choisi par le jury en 
+%% son sein le jour de la soutenance, et est indiqué sur les exemplaires 
+%% post-soutenance
+%%%%
+\begin{tabular}{ll}
+{\sc   Pr\'enom NOM}&(Institution) {\small Rapporteur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Codirecteur de th\`ese}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Examinateur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Examinateur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Codirecteur de th\`ese}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Invit\'e}\vspace{1mm}\\
+\end{tabular}
+
+
+%\vfill
+%\noindent
+%\hbox{\includegraphics[width=2.2cm]{logo_fmjh.jpg}}
+%\hfill {\bf NNT : } 
+%%%
+%% Numéro National de Thèse, à préciser lors du second dépôt 
+%% de la thèse post-soutenance
+%%%
+%\hfill \includegraphics[width=1cm]{pictoparis-saclay.png}
+\end{document}
+

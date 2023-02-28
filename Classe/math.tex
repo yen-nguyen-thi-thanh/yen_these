@@ -1,0 +1,87 @@
+\renewcommand{\yen}[1]{\textcolor{blue}{#1}}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+\newcommand{\tr}[1]{\textrm{tr}\left(#1\right)}
+
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calO}{\mathcal{O}}
+
+\newcommand{\Loss}{\text{Loss}}
+\newcommand{\ot}{\leftarrow}
+\newcommand{\TP}{\text{TP}}
+\newcommand{\FP}{\text{FP}}
+\newcommand{\TN}{\text{TN}}
+\newcommand{\FN}{\text{FN}}
+
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\OT}{\mathrm{OT}}
+\newcommand{\bz}{\textbf{z}}
+\newcommand{\bx}{\textbf{x}}
+\newcommand{\by}{\textbf{y}}
+\newcommand{\calZ}{\mathcal{Z}}
+\newcommand{\lb}{\llbracket}
+\newcommand{\rb}{\rrbracket}
+\newcommand{\II}{\textbf{I}}
+
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calP}{\mathcal{P}}
+
+
+
+
+\DeclareMathOperator{\dis}{dis}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\expit}{expit}
+\DeclareMathOperator{\calW}{\mathcal{W}}
+\DeclareMathOperator{\Prox}{Prox}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\var}{var}
+\newcommand*{\Comb}[2]{{}^{#1}C_{#2}}%
+
+\DeclareMathOperator{\Ind}{\textbf{1}}
+\DeclareMathOperator{\GW}{\calG\calW}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\Tr}{Tr}
+%\DeclareMathOperator{\e}{e}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newcommand{\parameter}{\textbf{Parameter:}}
+
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+ 	
+\newcommand{\indep}{\mkern2mu \rotatebox[origin=c]{90}{$\models$}\mkern2mu}
+\newcommand{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+                     =}
+\newcommand{\eqdef}{=\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}
+                     }
+                     
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,minimum size=12pt,draw=white,fill=#1] (char) {};}}
+            
+\newcommand*\circledout[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,minimum size=12pt,draw= #1,fill=white] (char) {};}}
+
+\newcommand{\niton}{\not\owns}

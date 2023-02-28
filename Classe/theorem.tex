@@ -1,0 +1,17 @@
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[theorem]
+%\newtheorem{proof}{Proof}[theorem]
+\newtheorem{proposition}{Proposition}[chapter]
+
+
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{lemma}{Lemma}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{ex}{Example}[chapter]
+\newenvironment{example}
+  {\vspace{\baselineskip}\hrule\nopagebreak\begin{ex}}
+  {\end{ex}\nopagebreak\hrule\vspace{\baselineskip}}

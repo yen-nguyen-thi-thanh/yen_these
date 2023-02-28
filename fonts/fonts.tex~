@@ -1,0 +1,14 @@
+%%%%%%%%%
+% Fonts %
+%%%%%%%%%
+
+\RequirePackage[quiet]{fontspec}
+\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+
+\newfontfamily\bodyfont[]{Roboto Light}
+\newfontfamily\bodyfontit[]{Roboto Thin Italic}
+\newfontfamily\thinfont[]{Roboto Thin}
+\newfontfamily\headingfont[]{Roboto Condensed Bold}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text, Color=textcolor]{Roboto Light}

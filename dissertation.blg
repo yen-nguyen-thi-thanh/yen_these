@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: dissertation.aux
+The style file: abbrvnat.bst
+Database file #1: References/main.bib
+Warning--empty institution in osasl2
+Warning--empty institution in osasl1
+You've used 58 entries,
+            2773 wiz_defined-function locations,
+            998 strings with 16717 characters,
+and the built_in function-call counts, 32033 in all, are:
+= -- 2786
+> -- 2315
+< -- 41
++ -- 778
+- -- 719
+* -- 2809
+:= -- 4997
+add.period$ -- 195
+call.type$ -- 58
+change.case$ -- 402
+chr.to.int$ -- 57
+cite$ -- 118
+duplicate$ -- 1297
+empty$ -- 2268
+format.name$ -- 799
+if$ -- 6629
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 56
+newline$ -- 307
+num.names$ -- 240
+pop$ -- 782
+preamble$ -- 1
+purify$ -- 352
+quote$ -- 0
+skip$ -- 1063
+stack$ -- 0
+substring$ -- 1101
+swap$ -- 181
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 608
+warning$ -- 2
+while$ -- 255
+width$ -- 0
+write$ -- 796
+(There were 2 warnings)

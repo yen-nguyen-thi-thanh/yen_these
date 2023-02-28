@@ -1,0 +1,42 @@
+%!TEX root = ../dissertation.tex
+% the notations and definitions sections.
+
+\noindent{\Large{\ROBCB Notations and definitions}}\\
+
+\noindent{\large{\ROBCB Definitions}}\\
+
+\noindent{\large{\ROBCB Notations }}\\
+\begin{itemize}
+\item $\llbracket M \rrbracket:$ set of integers $\{1, \ldots, M\}$.
+\item $\Omega_M:$ probability simplex with $M$ bins, namely the set of probability vectors in $\bbR_+$.
+\item $\mathbf{1}_M:$ vector of size $M$ with all entries equal to 1.
+\item $\textbf{0}_d:$ vector of size $d$ with all entries equal to 0.
+\item $c(x,y):$ cost function, with associated pairwise cost matrix $(C(\bx, \by))_{m,n} =c(x_m, y_n)$ evaluated on $\bx$ and $\by$.
+\item $(a, b):$ histograms in the simplices $\Omega_M \times \Omega_N$.
+\item$(\alpha, \beta)$ probability measures, defined on spaces $(\calX, \calY)$
+\item $\Pi(a, b):$ set of couplings between vectors $a, b$.
+\item $\Pi(\alpha, \beta):$ set of couplings between measures $\alpha, \beta$.
+\item $(\mu_{\bx}^{a} := \sum_{m\in \llbracket M \rrbracket} a_m \delta_{x_m}  , \nu_{\by}^{b} := \sum_{n\in \llbracket N \rrbracket} b_n \delta_{y_n}):$ the weighted empirical measure attached to $\bx := \{x_1,\ldots, x_M \}$ and $\by := \{y_1, \ldots, y_N\}$, respectively.
+\item For $\rho \in \bbR^{M}$,  $\diag(\rho)$ is the $M\times M$ matrix with diagonal $\rho$ and zero otherwise.
+\item $OT_{c} (\alpha, \beta)$: value of optimization problem associated to the optimal transport with cost function $c$.
+\item $\langle \cdot, \cdot \rangle_{F}:$  for the usual Euclidean dot-product between vectors; for two matrices of the same size $A$ and $B$, $\langle A, B\rangle_{F} := \Tr{A^{\top} B}$ is the Frobenius dot-product.
+\item $K := \mathrm{e}^{-C/\gamma}$   Gibbs kernel associated to the cost matrix $C$.
+\item $ a \otimes b := a b^\top \in \bbR^{M\times N} $.
+\item $ a \odot b := (a_m b_m) \in \bbR^M$ for $(a, b) \in (\bbR^M)^2$.
+\item $\mathbf{f}  \oplus  \mathbf{g} := \mathbf{f}  \mathbf{1}_M^\top + \mathbf{1}_N \mathbf{g}^\top \in \bbR^{M \times N}$ for two vectors $\mathbf{f} \in \bbR^M$, $\mathbf{g} \in \bbR ^{N}$
+\end{itemize}
+\noindent{\large{\ROBCB Abbreviations }}\\
+
+\noindent{\large{\ROBCB Conflicts in notation between chapters }}\\
+We have tried to use coherent and non-conflicting notation for the mathematical objects defined in this thesis. However, for the sake of consistency with the conventions of the field, we made the choice to keep conventional notations for known quantities. ...\\
+\yen{add more detail, where there are conflict}\\
+Theses notational conflicts have been kept to ease the understanding of the manuscript. They occur between different chapters but not inside each chapter. We stress that the potential uncertainty is removed when the context is taken into consideration.
+
+
+
+
+
+
+
+
+

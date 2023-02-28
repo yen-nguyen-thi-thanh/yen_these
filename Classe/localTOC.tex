@@ -1,0 +1,34 @@
+\renewcommand{\cftsecfont}{\ROBC\color{\BoxColor}}
+\renewcommand{\cftsecpagefont}{\ROBC} 
+\renewcommand{\cftsubsecfont}{\ROBCL}
+\renewcommand{\cftsubsecpagefont}{\ROBCL} 
+\renewcommand{\cftsubsubsecfont}{\ROBCL}
+\renewcommand{\cftsubsubsecpagefont}{\ROBCL} 
+\renewcommand{\cftsubsubsecpagefont}{\ROBCL} 
+\renewcommand{\cftsecleader}{\tiny \color{\BoxColor} \cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\hfill}
+\renewcommand{\cftsubsubsecleader}{\hfill}
+
+\newcommand{\antoine}[1]{\textcolor{orange}{~#1~}}
+\renewcommand{\yen}[1]{\textcolor{blue}{~#1~}}
+
+
+\makeatletter
+  \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+\newcommand\LocalTOC{%
+\vspace{-1cm}
+\textcolor{\BoxColor}{\vhrulefill{1pt}}
+\vspace{1cm}
+
+\begingroup
+\let\clearpage\relax
+\vspace{-4.9cm}
+\localtableofcontents*
+\endgroup
+
+\noindent\textcolor{\BoxColor}{\vhrulefill{1pt}}
+
+\vspace{0.5cm}
+  }
