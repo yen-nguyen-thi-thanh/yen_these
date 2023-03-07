@@ -5,12 +5,12 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {1.1}What this thesis is about?}{1}{section.1.1}
-\contentsline {paragraph}{Micro-RNA regulation in the striatum of Huntington’s disease model mice}{1}{section.1.1}
+\contentsline {paragraph}{ Huntington’s disease\\}{1}{section.1.1}
 \contentsline {paragraph}{Anticipate the declaration of natural disaster for a drought event in France}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Formalisation}{2}{section.1.2}
-\contentsline {paragraph}{Micro-RNA regulation in the striatum of Huntington’s disease model mice}{2}{section.1.2}
+\contentsline {paragraph}{Huntington’s disease}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}State of the art}{2}{section.1.3}
-\contentsline {paragraph}{Micro-RNA regulation in the striatum of Huntington’s disease model mice}{2}{section.1.3}
+\contentsline {paragraph}{Hungtinton disease}{2}{section.1.3}
 \contentsline {paragraph}{Anticipate declaration of natural disaster for a drought event}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Design, programming and implementation of algorithms}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Results}{2}{section.1.5}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,11 +22,25 @@ L.~Kantorovich.
 \newblock On the translocation of masses.
 \newblock \emph{Dokl. Akad. Nauk SSSR}, pages 227--229, 1942.
 
+\bibitem[MacDonald et~al.(1993)MacDonald, Ambrose, Duyao, Myers, and
+  et~al.]{MACDONALD1993971}
+M.~E. MacDonald, C.~M. Ambrose, M.~P. Duyao, R.~H. Myers, and et~al.
+\newblock A novel gene containing a trinucleotide repeat that is expanded and
+  unstable on huntington's disease chromosomes.
+\newblock \emph{Cell}, 72\penalty0 (6):\penalty0 971--983, 1993.
+
 \bibitem[Monge(1781)]{monge1781}
 G.~Monge.
 \newblock \emph{M{\'e}moire sur la th{\'e}orie des d{\'e}blais et des
   remblais}.
 \newblock {Histoire de l'Académie Royale des Sciences}, 1781.
+
+\bibitem[Nazarov and Kreis(2021)]{NK2021}
+P.~V. Nazarov and S.~Kreis.
+\newblock Integrative approaches for analysis of m{RNA} and micro{RNA}
+  high-throughput data.
+\newblock \emph{Computational and Structural Biotechnology Journal},
+  19:\penalty0 1154--1162, 2021.
 
 \bibitem[Peyr{\'e} and Cuturi(2019)]{COT19}
 G.~Peyr{\'e} and M.~Cuturi.
@@ -34,5 +48,10 @@ G.~Peyr{\'e} and M.~Cuturi.
   Science}.
 \newblock Foundations and Trends in Machine Learning Series. Now Publishers,
   2019.
+
+\bibitem[Walker(2007)]{HD2007}
+F.~O. Walker.
+\newblock Huntington's disease.
+\newblock \emph{The Lancet}, 369\penalty0 (9557):\penalty0 218--228, 2007.
 
 \end{thebibliography}

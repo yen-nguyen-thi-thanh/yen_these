@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdftex 2018.12.7)  3 MAR 2023 18:11
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**ch_resume.tex
+(./ch_resume.tex
+./ch_resume.tex:1: Undefined control sequence.
+l.1 \section
+            {What this thesis is about?}
+? 
+./ch_resume.tex:1: Emergency stop.
+l.1 \section
+            {What this thesis is about?}
+End of file on the terminal!
+
+./ch_resume.tex:1:  ==> Fatal error occurred, no output PDF file produced!
