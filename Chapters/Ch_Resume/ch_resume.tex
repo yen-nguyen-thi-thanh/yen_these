@@ -1,4 +1,4 @@
-\section{What this thesis is about?}
+\section{What is this thesis about?}
 
 Optimal transport theory has found many application in diverse fields in machine learning thank to 
 providing a powerful tool for comparing probability distributions, one of a crucial issue
@@ -6,11 +6,11 @@ in machine learning.  In this thesis, we leverage the optimal transport theory a
 the problems in biology and actuary. The biological problem is to assess the possible relationships between microRNA and mRNA expression in the striatum of Huntington's disease model mice. The actuarial problem relates to anticipate the declaration of natural disaster for a drought event. 
 
 \paragraph{ Huntington’s disease\\}
-Huntington's disease, an autosomal-dominant, progressive neurodegenerative disorder, is characterized by involuntary chromatic movements with cognitive and behavioral disturbances and is caused by an expansion of a repeating CAG triplet series in the huntingtin gene~\cite{HD2007, MACDONALD1993971}.   In normal individuals the CAG repeat length ranges from 10 to 35, while in HD individuals, it ranges from 36 to more than 120 which is inversely correlated with age of onset. Specifically, HD patients with 36-40 CAG repeats may have late onset or may not develop symptoms while repeat lengths in the 40s have symptom onset in the fourth decade and repeat lengths greater than 60 lead to juvenile onset \yen{cite}.
+Huntington's disease, an autosomal-dominant, progressive neurodegenerative disorder, is characterized by involuntary chromatic movements with cognitive and behavioral disturbances and is caused by an expansion of a repeating CAG triplet series in the huntingtin gene~\cite{HD2007, MACDONALD1993971}.   In normal individuals the CAG repeat length ranges from 10 to 35, while in HD individuals, it ranges from 36 to more than 120 which is inversely correlated with age of onset. Specifically, HD patients with 36-40 CAG repeats may have late onset or may not develop symptoms while repeat lengths in the 40s have symptom onset in the fourth decade and repeat lengths greater than 60 lead to juvenile onset \cite{Andrew1993}
 There are currently no treatments to prevent the onset or slow the progression of HD.
 
-Huntington's disease, like several neurodegenerative diseases such as Alzheimer's disease, Parkinson's disease and amyotrophic lateral sclerosis, relates to gene deregulation which has encouraged large studies to gene regulatory mechanisms.
-Gene expression is controlled by limiting the amount of mRNA produced from a particular gene at the transcription level and regulating the translation of mRNA into proteins at the post-transcriptional level. The most important instruments in the latter level  are small non-coding RNAs called miRNAs. It binds to a complementary sequence in the 3'UTR of the target mRNA resulting in a rapid degradation of the mRNA or less frequently in an inhibition of its translation into protein. So the researchers are interested in studying the interaction between miRNAs and mRNAs in HD to gain a deeper understanding the disease and to develop a new treatment.
+Huntington's disease, like several neurodegenerative diseases such as Alzheimer's disease, Parkinson's disease and amyotrophic lateral sclerosis, relates to gene deregulation which has encouraged large studies to gene regulatory mechanisms~\cite{Langfelder2018}.
+Gene expression is controlled by limiting the amount of mRNA produced from a particular gene at the transcription level and regulating the translation of mRNA into proteins at the post-transcriptional level. The most important instruments in the latter level  are small non-coding RNAs called miRNAs. It binds to a complementary sequence in the 3'UTR of the target mRNA resulting in a rapid degradation of the mRNA or less frequently in an inhibition of its translation into protein~\cite{Pasquinelli12}. So the researchers are interested in studying the interaction between miRNAs and mRNAs in HD to gain a deeper understanding the disease and to develop a new treatment.
 
 \paragraph{Anticipate the declaration of natural disaster for a drought event in France}
 
@@ -20,15 +20,15 @@ Gene expression is controlled by limiting the amount of mRNA produced from a par
 \section{Formalisation}
 
 \paragraph{Huntington’s disease}
-Advanced sequencing technologies such as RNAseq produce large data sets as genome, proteome, transcriptome and metabolome. The analysis of numerous data provides insight into genetics, human biology and disease. Notably, the data of Huntington's disease in post-mortem human brains and in mouse models are increasingly available, including one of the largest omics data set of mRNA, miRNA and protein data collectively quantifying several layers of molecular regulation in the brain of HD model knock-in mice.  The data promoted various studies~\cite{}
+In recent years, advanced sequencing technologies such as RNAseq produce large data sets as genome, proteome, transcriptome and metabolome, which are analysed to gain insight into genetics, human biology and disease. Notably, the data of Huntington's disease are increasingly available for the analyse of  molecular pathology such as  mRNA expression signatures of HD in post-mortem human brains~\cite{Neueder2014, CHA2007228} and the changes in miRNA expression  in multiple mouse models~\cite{Langfelder2018}.  However, little is known about the interaction between mRNA and miRNA in HD because of (1) lack of time-series and high quality-data from different cells/ tissues from healthy and diseased conditions; (2)difficulty to build an accurately modeling between miRNAs and mRNAs with an acceptable of false positive and false negative results (3) costly to carry out experimental methods and validation of miRNA target gene.
 
-Encouraged by the promising findings of~\cite{}, our goal is to shed light on the interaction between mRNA and miRNAs based on multidimensional data which are collected at three different ages in striatum (a brain region) from an allelic series of HD model knock-in mice with increasing CAG length in the endogenous Huntingtin gene.  For each combination of poly Q length and age, we have quantified miRNA and mRNA expression of 8 mice including 4 females and 4 males. After preprocessing ...we obtained the final dataset consisting of $M= 13 616$ mRNA profiles and $N=1143$ miRNA profiles. The fact that miRNA and target mRNAs are linked by a "many-to-many" mirroring relationship because a miRNA induces the degradation of a target mRNA or blocks its translation into proteins, or both and a miRNA can regulate several mRNAs. The biological hypothesis guides to identify the negatively correlative miRNA-mRNA pairs.
+Encouraged by the promising findings of~\cite{megret:inserm-02512089, Langfelder2018}, our goal is to shed light on the interaction between mRNA and miRNAs based on multidimensional data which are collected at three different ages in striatum (a brain region) from an allelic series of HD model knock-in mice with increasing CAG length in the endogenous Huntingtin gene.  For each combination of poly Q length and age, we have quantified miRNA and mRNA expression of 8 mice including 4 females and 4 males. After preprocessing ~\cite{megret:inserm-02512089}, we obtained the final dataset consisting of $M= 13 616$ mRNA profiles and $N=1143$ miRNA profiles. The fact that miRNA and target mRNAs are linked by a "many-to-many" mirroring relationship because a miRNA induces the degradation of a target mRNA or blocks its translation into proteins, or both and a miRNA can regulate several mRNAs. The biological hypothesis guides to identify the negatively correlative miRNA-mRNA pairs.
 
 \section{State of the art}
 
 \paragraph{Hungtinton disease}
 
-As reviewed by~\cite{NK2021}, 
+Over the last decade, many researches about computational prediction, experimental detection and validation of miRNA target genes have been done.
 
 
 

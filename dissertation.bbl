@@ -1,14 +1,28 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Andrew et~al.(1993)Andrew, Goldberg, Kremer, Telenius, Theilmann,
+  Adam, Starr, Squitieri, Lin, Kalchman, K., and Hayden]{Andrew1993}
+S.~E. Andrew, Y.~P. Goldberg, B.~Kremer, H.~Telenius, J.~Theilmann, S.~Adam,
+  E.~Starr, F.~Squitieri, B.~Lin, M.~A. Kalchman, G.~R. K., and M.~R. Hayden.
+\newblock The relationship between trinucleotide (cag) repeat length and
+  clinical features of huntington's disease.
+\newblock \emph{Nature Genetics}, 4:\penalty0 398--403, 1993.
+
 \bibitem[Birkhoff(1957)]{Birkhoff}
 G.~Birkhoff.
 \newblock Extensions of {J}entzsch's theorem.
 \newblock \emph{Trans. Amer. Math. Soc.}, 85, 1957.
+
+\bibitem[Cha(2007)]{CHA2007228}
+J.-H.~J. Cha.
+\newblock Transcriptional signatures in huntington's disease.
+\newblock \emph{Progress in Neurobiology}, 83\penalty0 (4):\penalty0 228--248,
+  2007.
 
 \bibitem[Cuturi(2013)]{Cuturi13}
 M.~Cuturi.
@@ -22,12 +36,28 @@ L.~Kantorovich.
 \newblock On the translocation of masses.
 \newblock \emph{Dokl. Akad. Nauk SSSR}, pages 227--229, 1942.
 
+\bibitem[Langfelder et~al.(2018)Langfelder, Gao, Wang, Howland, Kwak, Vogt,
+  Aaronson, Rosinski, Coppola, Horvath, and Yang]{Langfelder2018}
+P.~Langfelder, F.~Gao, N.~Wang, D.~Howland, S.~Kwak, T.~Vogt, J.~Aaronson,
+  J.~Rosinski, G.~Coppola, S.~Horvath, and X.~Yang.
+\newblock Micro{RNA} signatures of endogenous {H}untingtin {CAG} repeat
+  expansion in mice.
+\newblock \emph{PloS One}, 13\penalty0 (1), 2018.
+
 \bibitem[MacDonald et~al.(1993)MacDonald, Ambrose, Duyao, Myers, and
   et~al.]{MACDONALD1993971}
 M.~E. MacDonald, C.~M. Ambrose, M.~P. Duyao, R.~H. Myers, and et~al.
 \newblock A novel gene containing a trinucleotide repeat that is expanded and
   unstable on huntington's disease chromosomes.
 \newblock \emph{Cell}, 72\penalty0 (6):\penalty0 971--983, 1993.
+
+\bibitem[M{\'e}gret et~al.(2020)M{\'e}gret, Sasidharan~Nair, Dancourt,
+  Aaronson, Rosinski, and Neri]{megret:inserm-02512089}
+L.~M{\'e}gret, S.~Sasidharan~Nair, J.~Dancourt, J.~Aaronson, J.~Rosinski, and
+  C.~Neri.
+\newblock {Combining feature selection and shape analysis uncovers precise
+  rules for miRNA regulation in Huntington's disease mice}.
+\newblock \emph{{BMC Bioinformatics}}, 21\penalty0 (1):\penalty0 75, 2020.
 
 \bibitem[Monge(1781)]{monge1781}
 G.~Monge.
@@ -41,6 +71,19 @@ P.~V. Nazarov and S.~Kreis.
   high-throughput data.
 \newblock \emph{Computational and Structural Biotechnology Journal},
   19:\penalty0 1154--1162, 2021.
+
+\bibitem[Neueder and Bates(2014)]{Neueder2014}
+A.~Neueder and G.~P. Bates.
+\newblock A common gene expression signature in huntington’s disease patient
+  brain regions.
+\newblock 7:\penalty0 60, 2014.
+
+\bibitem[Pasquinelli(2012)]{Pasquinelli12}
+A.~E. Pasquinelli.
+\newblock {MicroRNAs} and their targets: recognition, regulation and an
+  emerging reciprocal relationship.
+\newblock \emph{{Nature reviews. Genetics}}, 13\penalty0 (4):\penalty0
+  271—282, March 2012.
 
 \bibitem[Peyr{\'e} and Cuturi(2019)]{COT19}
 G.~Peyr{\'e} and M.~Cuturi.
