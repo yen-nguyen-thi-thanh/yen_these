@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.12.7)  8 MAR 2023 18:41
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.12.7)  13 MAR 2023 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2134,23 +2134,17 @@ Chapter 2.
 
 ] [6] [7]
 Missing character: There is no π in font cmmi10!
- [8] [9] [10]) [11] [12]
-Chapter 3.
-(./Chapters/Ch3/ch3.tex) [13
+ [8] [9] [10]) [11] [12] (./dissertation.bbl) [13
 
 
-] [14] (./dissertation.bbl [15
-
-
-]) [16] [17]
+] [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
-
-(./dissertation.aux)
+ (./dissertation.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 167.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: E3329B411B3B737EDB151B2A9DD751E4.
+(rerunfilecheck)             Checksum: EAD12C94E4C9C6978A76BB5FF5C18B6F.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2159,12 +2153,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  )
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 39027 strings out of 492970
- 743638 string characters out of 6133938
- 858483 words of memory out of 5000000
- 42271 multiletter control sequences out of 15000+600000
+ 38982 strings out of 492970
+ 742698 string characters out of 6133938
+ 858477 words of memory out of 5000000
+ 42230 multiletter control sequences out of 15000+600000
  537205 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 57i,18n,67p,10419b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,18n,66p,10419b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (24 pages).
+Output written on dissertation.pdf (21 pages).

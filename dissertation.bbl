@@ -9,8 +9,8 @@
   Adam, Starr, Squitieri, Lin, Kalchman, K., and Hayden]{Andrew1993}
 S.~E. Andrew, Y.~P. Goldberg, B.~Kremer, H.~Telenius, J.~Theilmann, S.~Adam,
   E.~Starr, F.~Squitieri, B.~Lin, M.~A. Kalchman, G.~R. K., and M.~R. Hayden.
-\newblock The relationship between trinucleotide (cag) repeat length and
-  clinical features of huntington's disease.
+\newblock {The relationship between trinucleotide (CAG) repeat length and
+  clinical features of Huntington's disease}.
 \newblock \emph{Nature Genetics}, 4:\penalty0 398--403, 1993.
 
 \bibitem[Birkhoff(1957)]{Birkhoff}
@@ -19,7 +19,7 @@ G.~Birkhoff.
 \newblock \emph{Trans. Amer. Math. Soc.}, 85, 1957.
 
 \bibitem[Cha(2007)]{CHA2007228}
-J.-H.~J. Cha.
+J.~H.~J. Cha.
 \newblock Transcriptional signatures in huntington's disease.
 \newblock \emph{Progress in Neurobiology}, 83\penalty0 (4):\penalty0 228--248,
   2007.
@@ -44,6 +44,12 @@ P.~Langfelder, F.~Gao, N.~Wang, D.~Howland, S.~Kwak, T.~Vogt, J.~Aaronson,
   expansion in mice.
 \newblock \emph{PloS One}, 13\penalty0 (1), 2018.
 
+\bibitem[Lee et~al.(1993)Lee, Feinbaum, and Ambros]{LEE1993843}
+R.~C. Lee, R.~L. Feinbaum, and V.~Ambros.
+\newblock {The C. elegans heterochronic gene lin-4 encodes small RNAs with
+  antisense complementarity to lin-14}.
+\newblock \emph{Cell}, 75\penalty0 (5):\penalty0 843--854, 1993.
+
 \bibitem[MacDonald et~al.(1993)MacDonald, Ambrose, Duyao, Myers, and
   et~al.]{MACDONALD1993971}
 M.~E. MacDonald, C.~M. Ambrose, M.~P. Duyao, R.~H. Myers, and et~al.
@@ -64,13 +70,6 @@ G.~Monge.
 \newblock \emph{M{\'e}moire sur la th{\'e}orie des d{\'e}blais et des
   remblais}.
 \newblock {Histoire de l'Académie Royale des Sciences}, 1781.
-
-\bibitem[Nazarov and Kreis(2021)]{NK2021}
-P.~V. Nazarov and S.~Kreis.
-\newblock Integrative approaches for analysis of m{RNA} and micro{RNA}
-  high-throughput data.
-\newblock \emph{Computational and Structural Biotechnology Journal},
-  19:\penalty0 1154--1162, 2021.
 
 \bibitem[Neueder and Bates(2014)]{Neueder2014}
 A.~Neueder and G.~P. Bates.

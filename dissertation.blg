@@ -6,43 +6,43 @@ Database file #1: References/main.bib
 Warning--empty journal in Neueder2014
 You've used 14 entries,
             2773 wiz_defined-function locations,
-            698 strings with 7140 characters,
-and the built_in function-call counts, 7018 in all, are:
-= -- 603
-> -- 451
-< -- 12
-+ -- 155
-- -- 141
-* -- 570
-:= -- 1102
+            696 strings with 7131 characters,
+and the built_in function-call counts, 7045 in all, are:
+= -- 600
+> -- 460
+< -- 11
++ -- 158
+- -- 144
+* -- 581
+:= -- 1108
 add.period$ -- 44
 call.type$ -- 14
-change.case$ -- 87
+change.case$ -- 88
 chr.to.int$ -- 14
 cite$ -- 29
-duplicate$ -- 305
+duplicate$ -- 306
 empty$ -- 540
-format.name$ -- 161
-if$ -- 1461
+format.name$ -- 162
+if$ -- 1466
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 16
 newline$ -- 78
 num.names$ -- 56
-pop$ -- 171
+pop$ -- 173
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 76
 quote$ -- 0
-skip$ -- 248
+skip$ -- 247
 stack$ -- 0
-substring$ -- 254
+substring$ -- 244
 swap$ -- 34
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 144
 warning$ -- 1
-while$ -- 57
+while$ -- 56
 width$ -- 0
 write$ -- 190
 (There was 1 warning)
